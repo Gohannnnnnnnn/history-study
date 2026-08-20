@@ -109,9 +109,28 @@
     margin-right: 6px;
     margin-top: 8px;
   }
+  .back-btn {
+    position: fixed;
+    left: 12px;
+    z-index: 100;
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(34,48,74,.12);
+  }
+  .back-btn:hover { border-color: var(--accent); }
+  .back-top-left { top: 12px; }
+  .back-bottom-left { bottom: 12px; }
 </style>
 </head>
 <body>
+
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
 
 <header>
   <div class="logo">为 己 之 学</div>
