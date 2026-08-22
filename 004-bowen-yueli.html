@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第四课 · 博文约礼 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f6f8fc;
+    --card: #ffffff;
+    --ink: #22304a;
+    --ink-soft: #5a6b8c;
+    --accent: #2b5fd9;
+    --accent-soft: #e7eefc;
+    --gold: #a87a1f;
+    --gold-soft: #faf3e3;
+    --line: #dde5f2;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 18px 60px;
+  }
+  header { text-align: center; padding: 28px 16px 20px; }
+  .logo { color: var(--accent); font-size: 1.1rem; font-weight: 600; letter-spacing: 2px; }
+  .course-no {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin: 12px 0 8px;
+  }
+  h1 { font-size: 1.5rem; color: var(--ink); font-weight: 700; }
+  .sub { color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px;
+    margin: 16px 0;
+  }
+  .sec-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .sec-title.gold { color: var(--gold); border-left-color: var(--gold); }
+  .original {
+    font-size: 0.95rem;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    color: #33415c;
+  }
+  .original .q { font-weight: 600; color: var(--ink); }
+  .original p { margin: 8px 0; }
+  .translation p { margin: 8px 0; }
+  .translation .speaker { color: var(--accent); font-weight: 600; }
+  table { width:100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; }
+  th { background: var(--accent-soft); padding: 8px 10px; text-align: left; color: var(--ink); }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fable {
+    background: var(--gold-soft);
+    border: 1px solid #ecdcb8;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .fable .f-title { font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+  .insight {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 0.92rem;
+  }
+  .insight .i-title { font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .next {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-top: 8px;
+  }
+  .back-btn {
+    position: fixed;
+    left: 12px;
+    z-index: 100;
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(34,48,74,.12);
+  }
+  .back-btn:hover { border-color: var(--accent); }
+  .back-top-left { top: 12px; }
+  .back-bottom-left { bottom: 12px; }
+</style>
+</head>
+<body>
+
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 004 课</div>
+  <h1>博文约礼</h1>
+  <div class="sub">《传习录》徐爱录 · 第五条</div>
+  <div>
+    <span class="tag">博文约礼</span>
+    <span class="tag">文即理</span>
+    <span class="tag">事上功夫</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文</div>
+  <div class="original">
+    <p class="q">爱问："先生以'博文为约礼之训'，如何？"</p>
+    <p>先生曰："'礼'字即是'理'字。理之发见可见者谓之文，文之隐微不可见者谓之理，只是一物。约礼只是要此心纯是一个天理。要此心纯是天理，须就理之发见处用功。如发见于事亲时，就在事亲上学存此天理；发见于事君时，就在事君上学存此天理；发见于处富贵贫贱时，就在处富贵贫贱上学存此天理；发见于处患难夷狄时，就在处患难夷狄上学存此天理。至于作止语默，无处不然。随他发见处，即就那上面学个存天理。这便是博学之于文，便是约礼的功夫。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱问：</span>"先生把'博文'当作'约礼'的功夫来讲，怎么理解？"</p>
+    <p><span class="speaker">阳明答：</span>"'礼'字就是'理'字。理显现出来、看得见的，叫'文'；文背后藏着的、看不见的，叫'理'——其实是一个东西。约礼，只是要让这颗心纯粹是天理。</p>
+    <p style="margin-top:8px">要让心纯是天理，就得在理显现的地方用功：理显现在侍奉父母上，就在侍奉父母上学存天理；显现在侍奉君上，就在侍奉君上学存天理；显现在面对富贵贫贱上，就在面对富贵贫贱上学存天理；显现在身处患难逆境时，就在患难逆境上学存天理。至于动止、言谈、静默，无处不是这样。它在哪里显现，就在哪里学存天理——这就是'博文'，也就是'约礼'的功夫。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 这段话发生在什么时候</div>
+  <p><b>"博文约礼"是什么：</b>出自《论语·雍也》："君子博学于文，约之以礼。"——孔子说君子要广博地学文化，再用礼来约束自己。这是儒家的经典教学大纲，朱熹解释为"先广泛学习知识，再用礼约束行为"（学和行两件事）。</p>
+  <p style="margin-top:8px"><b>徐爱为什么问：</b>阳明在讲课时把"博文"和"约礼"合并成一套功夫（博文就是约礼的功夫），这和朱熹"两件事"的理解不同。徐爱要确认：难道不需要先广泛学习吗？</p>
+  <p style="margin-top:8px"><b>阳明的回答：</b>礼 = 理。文是理看得见的样子。博文（在事事物物上学）不是"收集知识"，而是"在每个具体情境里练这颗心"——所以博文本身就是约礼。</p>
+</section>
+
+<section>
+  <div class="sec-title">典故解释</div>
+  <p><b>「博学于文，约之以礼」</b>——《论语·雍也》。历来注家（包括朱熹）理解为两件事：先博学，再约礼。阳明把两件事合成一件事：<b>博文不是积累知识，是在万事上存天理；约礼不是事后约束，就是"存天理"这个功夫本身。</b></p>
+  <p style="margin-top:8px"><b>「礼字即是理字」</b>——阳明的一个关键发明。"礼"（外在规范）和"理"（内在天理）本来是两个概念，阳明说它们是同一个东西的两面。规范不是外来的条条框框，是天理在人间的显现。</p>
+  <p style="margin-top:8px"><b>「处患难夷狄」</b>——《论语》"君子无终食之间违仁，造次必于是，颠沛必于是"。意思是无论身处患难还是蛮荒之地，心都不能离开天理。阳明列举"事亲、事君、富贵贫贱、患难夷狄"——覆盖人生所有处境：对父母、对上级、在顺境、在逆境。</p>
+</section>
+
+<section>
+  <div class="sec-title">拆解：这一课在讲什么</div>
+  <table>
+    <tr><th></th><th>朱熹的理解</th><th>阳明的理解</th></tr>
+    <tr><td><b>博文</b></td><td>广泛学习知识（读书穷理）</td><td>在事事物物上练存天理</td></tr>
+    <tr><td><b>约礼</b></td><td>用礼约束行为（事后收敛）</td><td>让此心纯是天理（功夫本身）</td></tr>
+    <tr><td><b>关系</b></td><td>两件事：先学后约</td><td><b>一件事</b>：博文就是约礼的功夫</td></tr>
+  </table>
+  <p style="margin-top:10px"><b>核心：</b>阳明最怕的就是"知"和"行"分裂——以为先学一堆知识、再用礼去管自己。他说：<b>学，不是在书里学，是在事上学</b>。侍奉父母时就练孝的心，面对诱惑时就练不动的心——这才是真学问。</p>
+  <p style="margin-top:8px"><b>对现代人的提醒：</b>我们读书、上课、听讲座，常常陷入"知识收集"的错觉——以为知道得多就是学得好。阳明说：<b>学得好不好，看你在事上能不能立得住。</b>这和"纸上得来终觉浅，绝知此事要躬行"是一个意思，但更狠——不是"还要躬行"，是"只能在躬行中学"。</p>
+</section>
+
+<section>
+  <div class="sec-title gold">寓言故事 · 庖丁解牛</div>
+  <div class="fable">
+    <div class="f-title">所好者道也，进乎技矣</div>
+    <p>庖丁为梁惠王宰牛，手所触、肩所倚、脚所踩，刀声合着音乐节拍，像在跳舞。梁惠王惊叹：技术怎么能到这个地步？</p>
+    <p style="margin-top:6px">庖丁说："我开始宰牛时，眼里看到的就是一头整牛（所见无非牛者）；三年之后，眼里再没有整头牛了（目无全牛），看到的是筋骨脉络的缝隙。现在，我用心神去接触，不用眼睛去看——<b>依乎天理</b>，刀在骨节空隙里走，游刃有余。"</p>
+    <p style="margin-top:6px">一把刀用了十九年，宰了几千头牛，刀刃却像刚从磨刀石上下来一样新。</p>
+  </div>
+  <p style="font-size:0.88rem; color:var(--ink-soft); margin-top:8px"><b>和本课的呼应：</b>庖丁的"技"（刀法、解牛的各种技巧）= 博文；"道"（依乎天理、游刃有余）= 约礼。他不是先学完所有刀法再去解牛，而是<b>每一刀都是练习，每一刀都在接近道</b>——博文和约礼，本就是一件事。十九年几千头牛，就是"事上磨练"的注脚。</p>
+</section>
+
+<section>
+  <div class="sec-title gold">建议背诵</div>
+  <div class="fable">
+    <div class="f-title">📖 这段值得背下来</div>
+    <p style="font-size:1.05rem; font-weight:700; margin:8px 0">"礼字即是理字。理之发见可见者谓之文，文之隐微不可见者谓之理，只是一物。"</p>
+    <p><b>白话：</b>礼就是理。理显现出来看得见的叫文，文背后看不见的理——只是一个东西。</p>
+    <p style="margin-top:6px"><b>为什么值得背：</b>它打掉了"外在规范"和"内在天理"的隔阂。背下它，你不会再把"遵守规矩"当成束缚——规矩是天理在人间的样子，守规矩就是顺着天理走。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="insight">
+    <div class="i-title">不强制，但可能会心</div>
+    <p>你每天查房、看文献、做手术——如果只当"干活"，那是博文而不约礼；如果每次做时都问一句"我这颗心正不正、有没有被烦躁和功利带着走"，那就是在事上存天理。</p>
+    <p style="margin-top:6px">阳明说的"事上磨练"，就是把你每天已经在做的事，变成练心的道场。不是多做什么，是换个活法去做。</p>
+  </div>
+</section>
+
+<div class="next">下一课：徐爱问"知行合一"——知和行到底什么关系？</div>
+
+</body>
+</html>
