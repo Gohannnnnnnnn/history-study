@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第六课 · 知是行之始 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f6f8fc;
+    --card: #ffffff;
+    --ink: #22304a;
+    --ink-soft: #5a6b8c;
+    --accent: #2b5fd9;
+    --accent-soft: #e7eefc;
+    --gold: #a87a1f;
+    --gold-soft: #faf3e3;
+    --line: #dde5f2;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 18px 60px;
+  }
+  header { text-align: center; padding: 28px 16px 20px; }
+  .logo { color: var(--accent); font-size: 1.1rem; font-weight: 600; letter-spacing: 2px; }
+  .course-no {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin: 12px 0 8px;
+  }
+  h1 { font-size: 1.5rem; color: var(--ink); font-weight: 700; }
+  .sub { color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px;
+    margin: 16px 0;
+  }
+  .sec-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .sec-title.gold { color: var(--gold); border-left-color: var(--gold); }
+  .original {
+    font-size: 0.95rem;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    color: #33415c;
+  }
+  .original .q { font-weight: 600; color: var(--ink); }
+  .original p { margin: 8px 0; }
+  .translation p { margin: 8px 0; }
+  .translation .speaker { color: var(--accent); font-weight: 600; }
+  table { width:100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; }
+  th { background: var(--accent-soft); padding: 8px 10px; text-align: left; color: var(--ink); }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fable {
+    background: var(--gold-soft);
+    border: 1px solid #ecdcb8;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .fable .f-title { font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+  .insight {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 0.92rem;
+  }
+  .insight .i-title { font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .next {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-top: 8px;
+  }
+  .back-btn {
+    position: fixed;
+    left: 12px;
+    z-index: 100;
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(34,48,74,.12);
+  }
+  .back-btn:hover { border-color: var(--accent); }
+  .back-top-left { top: 12px; }
+  .back-bottom-left { bottom: 12px; }
+</style>
+</head>
+<body>
+
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 006 课</div>
+  <h1>知是行之始，行是知之成</h1>
+  <div class="sub">《传习录》徐爱录 · 第七条</div>
+  <div>
+    <span class="tag">知行合一</span>
+    <span class="tag">功夫论</span>
+    <span class="tag">对病的药</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文</div>
+  <div class="original">
+    <p class="q">爱曰："古人说知行做两个，亦是要人见个分晓，一行做知的功夫，一行做行的功夫，即功夫始有下落。"</p>
+    <p>先生曰："此却失了古人宗旨也。某尝说<b>知是行的主意，行是知的功夫；知是行之始，行是知之成</b>。若会得时，只说一个知，已自有行在；只说一个行，已自有知在。……只为世间有一种人，懵懵懂懂的任意去做，全不解思惟省察，也只是个<b>冥行妄作</b>，所以必说个知，方才行得是；又有一种人，茫茫荡荡悬空去思索，全不肯着实躬行，也只是个<b>揣摸影响</b>，所以必说一个行，方才知得真。此是古人不得已补偏救弊的说话……今人却就将知行分作两件去做，以为必先知了然后能行……故遂终身不行，亦遂终身不知。此不是小病痛，其来已非一日矣。某今说个知行合一，正是<b>对病的药</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱说：</span>"古人把知和行分成两件，也是要人看得清楚，一件做知的功夫，一件做行的功夫，功夫才有下手的地方。"</p>
+    <p><span class="speaker">阳明说：</span>"这就失去古人的本意了。我曾经说过：<b>知是行的主意，行是知的功夫；知是行之始，行是知之成。</b>若真领会了，只说一个'知'，里面已经有'行'；只说一个'行'，里面已经有'知'。</p>
+    <p style="margin-top:8px">世上偏偏有两种人：一种懵懵懂懂、任意去做，完全不懂思考省察——只是<b>瞎走瞎干</b>，所以要讲'知'，他才知道该怎么行；一种凭空悬想、不肯亲身去做——只是<b>捕风捉影</b>，所以要讲'行'，他的'知'才是真的。古人把知行分开说，是不得已的补偏救弊……</p>
+    <p style="margin-top:8px">现在的人却真把知行分成两件事去做，以为必须先知道了才能去行……结果终身不行，也就终身不知。这不是小毛病，由来已久了。我说'知行合一'，正是对症的药。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 这段话发生在什么时候</div>
+  <p><b>徐爱的追问：</b>上一课阳明说"知而不行，只是未知"，徐爱听完，提出了一个很实在的疑问：古人也讲"知"的功夫和"行"的功夫分开做——这样功夫才有"下落"（有抓手、可操作）。您为什么非说成一个？</p>
+  <p style="margin-top:8px"><b>阳明的回答分三层：</b>第一，知行本是一个（知是行之始，行是知之成）；第二，古人分开说，是因为当时有两种病（只干不想 / 只想不干），是"补偏救弊"的权宜；第三，现在的人把权宜当成定规，以为"先学后做"，结果学一辈子、做一辈子不到——所以我要用"知行合一"这个药来治。</p>
+  <p style="margin-top:8px"><b>历史讽刺：</b>阳明批评的"以为必先知了然后能行"，恰恰是朱熹"知先行后"教条在明代读书人身上的后果——人人读书穷理，却终身不行。知行合一就是冲着这个病开的药方。</p>
+</section>
+
+<section>
+  <div class="sec-title">典故解释</div>
+  <p><b>「知是行之始，行是知之成」</b>——本课最核心的两句。始=开始/源头，成=完成/落地。<b>行动从认知发端（没有方向的行动是盲动）；认知在行动中完成（没有落地的认知是空谈）。</b>像一个手术：术前判断（知）是手术的开始，手术本身（行）是判断的完成。</p>
+  <p style="margin-top:8px"><b>「冥行妄作」</b>——冥=昏暗，妄=胡乱。摸黑走路、胡乱做事：只顾闷头干，从不反省。阳明治这种病要讲"知"。</p>
+  <p style="margin-top:8px"><b>「揣摸影响」</b>——揣摸=猜测，影响=影子回声。对着影子和回声空想：想得天花乱坠，从不落地。阳明治这种病要讲"行"。</p>
+  <p style="margin-top:8px"><b>「补偏救弊」</b>——弥补偏差、救治弊病。阳明的高明之处：他说古人分开讲知行，是"因病立方"（针对时代的病开药），不是真理本身；真理是知行本一。这个"把经典当药方不当真理"的态度，本身就是心学的精髓。</p>
+  <p style="margin-top:8px"><b>「对病的药」</b>——阳明给自己"知行合一"的定位：不是标新立异，是开给"知先行后"这个时代病的药。药要对症，病好了，药也不用天天吃。</p>
+</section>
+
+<section>
+  <div class="sec-title">拆解：这一课在讲什么</div>
+  <table>
+    <tr><th>两种病</th><th>表现</th><th>古人的药</th></tr>
+    <tr><td><b>冥行妄作</b></td><td>只干不想，闷头乱撞</td><td>说"知"——先明理再动手</td></tr>
+    <tr><td><b>揣摸影响</b></td><td>只想不干，捕风捉影</td><td>说"行"——亲身去做才知真</td></tr>
+  </table>
+  <p style="margin-top:10px"><b>关键一转：</b>古人把知行分开说，是针对"某一代人"的病；但真理是知行本一。如果把"分开说"当成"本来如此"，就成了新的病——<b>以为先学完才能做，结果永远学不完、永远不开始</b>。知行合一，就是拆掉"先学后做"这堵墙。</p>
+  <p style="margin-top:8px"><b>对现代人特别扎心：</b>"等我准备充分了再开始"——考博英语等背完单词再做题、学编程等看完教程再动手、读书等有空再读。阳明说：这是同一个病。<b>没有"准备完"的那天，知和行是一件事，边做边知，边知边做。</b></p>
+</section>
+
+<section>
+  <div class="sec-title gold">寓言故事 · 纸上谈兵</div>
+  <div class="fable">
+    <div class="f-title">赵括：兵书倒背如流，长平一战亡国</div>
+    <p>战国时，赵括是名将赵奢的儿子，从小熟读兵书，谈起兵法头头是道，连他父亲都辩不过他。赵奢却对妻子说："兵者，死地也，而括易言之。使赵不将括即已，若必将之，破赵军者必括也。"——打仗是生死之事，他儿子却说得太轻巧，赵国若用他当将，败军的一定是他。</p>
+    <p style="margin-top:6px">后来秦攻赵国，赵王果然用赵括替换廉颇。赵括上任，把兵书上的理论照搬照用，改掉廉颇的坚守策略，主动出击。长平一战，四十万赵军被秦军围困坑杀——赵国从此一蹶不振。</p>
+    <p style="margin-top:6px">赵括不是"不懂兵法"，他是<b>只有知、没有行</b>——兵书读得滚瓜烂熟，却没打过一天仗。他的"知"从未经过"行"的检验，一上战场就露馅。</p>
+  </div>
+  <p style="font-size:0.88rem; color:var(--ink-soft); margin-top:8px"><b>和本课的呼应：</b>赵括就是"揣摸影响"的极端版——悬空思索、不肯躬行。阳明说"知而不行，只是未知"，赵括用四十万条命验证了这句话。反过来看，赵奢那句"破赵军者必括也"，是真正的"知"——因为他懂，懂的人不用上战场也能看出纸上谈兵的破绽。</p>
+</section>
+
+<section>
+  <div class="sec-title gold">建议背诵</div>
+  <div class="fable">
+    <div class="f-title">📖 这段值得背下来</div>
+    <p style="font-size:1.05rem; font-weight:700; margin:8px 0">"知是行的主意，行是知的功夫；知是行之始，行是知之成。"</p>
+    <p><b>白话：</b>知是行的方向，行是知的落实；知是行动的开始，行是认知的完成。</p>
+    <p style="margin-top:6px"><b>为什么值得背：</b>四句话把"知行合一"讲圆了。背下它，你就同时拿到了两把尺子：做事前问"我的方向清楚吗"（知），做事中问"我真的在做吗"（行）。从此告别"等我准备好"和"瞎忙"两种状态。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="insight">
+    <div class="i-title">不强制，但可能会心</div>
+    <p>你学 Python 时，有没有过这样的时刻——看教程觉得"懂了"，关上书又写不出来？或者闷头敲了半天代码，却没停下来想想"这段为什么这么写"？</p>
+    <p style="margin-top:6px">前者是"揣摸影响"（只想不干），后者是"冥行妄作"（只干不想）。阳明的药方很简单：<b>边学边写，写不出来就说明没真懂；写完停下来复盘，才算是真学会。</b>你每天 Python 课后的选择题和动手代码，就是这剂药。</p>
+  </div>
+</section>
+
+<div class="next">下一课：徐爱问"至善只求诸心，恐于天下事理有不能尽"（之二）——心外无事，事上如何用功？</div>
+
+</body>
+</html>
