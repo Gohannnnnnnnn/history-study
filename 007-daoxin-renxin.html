@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第七课 · 道心与人心 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f6f8fc;
+    --card: #ffffff;
+    --ink: #22304a;
+    --ink-soft: #5a6b8c;
+    --accent: #2b5fd9;
+    --accent-soft: #e7eefc;
+    --gold: #a87a1f;
+    --gold-soft: #faf3e3;
+    --line: #dde5f2;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 18px 60px;
+  }
+  header { text-align: center; padding: 28px 16px 20px; }
+  .logo { color: var(--accent); font-size: 1.1rem; font-weight: 600; letter-spacing: 2px; }
+  .course-no {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin: 12px 0 8px;
+  }
+  h1 { font-size: 1.5rem; color: var(--ink); font-weight: 700; }
+  .sub { color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px;
+    margin: 16px 0;
+  }
+  .sec-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .sec-title.gold { color: var(--gold); border-left-color: var(--gold); }
+  .original {
+    font-size: 0.95rem;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    color: #33415c;
+  }
+  .original .q { font-weight: 600; color: var(--ink); }
+  .original p { margin: 8px 0; }
+  .translation p { margin: 8px 0; }
+  .translation .speaker { color: var(--accent); font-weight: 600; }
+  table { width:100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; }
+  th { background: var(--accent-soft); padding: 8px 10px; text-align: left; color: var(--ink); }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fable {
+    background: var(--gold-soft);
+    border: 1px solid #ecdcb8;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .fable .f-title { font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+  .insight {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 0.92rem;
+  }
+  .insight .i-title { font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .next {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-top: 8px;
+  }
+  .back-btn {
+    position: fixed;
+    left: 12px;
+    z-index: 100;
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(34,48,74,.12);
+  }
+  .back-btn:hover { border-color: var(--accent); }
+  .back-top-left { top: 12px; }
+  .back-bottom-left { bottom: 12px; }
+</style>
+</head>
+<body>
+
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 007 课</div>
+  <h1>道心与人心：只是一颗心</h1>
+  <div class="sub">《传习录》徐爱录 · 第八条</div>
+  <div>
+    <span class="tag">道心人心</span>
+    <span class="tag">精一之训</span>
+    <span class="tag">天理人欲</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文</div>
+  <div class="original">
+    <p class="q">爱问："'道心常为一身之主，而人心每听命'，以先生'精一'之训推之，此语似有弊。"</p>
+    <p>先生曰："然。心一也，未杂于人伪谓之道心，杂以人伪谓之人心。<b>人心之得其正者即道心，道心之失其正者即人心</b>，初非有二心也。程子谓人心即人欲，道心即天理，语若分析而意实得之。今曰'道心为主而人心听命'，是二心也。<b>天理人欲不并立</b>，安有天理为主、人欲又从而听命者？"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱问：</span>"古人说'道心常做一身之主，人心每每听命于它'——用先生'精一'的教导来推敲，这句话似乎有毛病。"</p>
+    <p><span class="speaker">阳明答：</span>"对。心只有一个：没有掺杂人为私伪的，叫'道心'；掺杂了人为私伪的，叫'人心'。<b>人心只要正了，就是道心；道心一旦失正，就变成人心</b>——本来就不是两颗心。程子说'人心就是人欲，道心就是天理'，话虽分了，意思是对的。现在说'道心为主、人心听命'，这就变成两颗心了。<b>天理和人欲不能并存</b>——哪有天理当主子、人欲还在一旁听命待命的道理？"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 这段话发生在什么时候</div>
+  <p><b>"道心/人心"从哪来：</b>出自《尚书·大禹谟》的十六字心传："人心惟危，道心惟微；惟精惟一，允执厥中。"——人心危险，道心精微；要精纯专一，才能把握中道。这是宋明理学反复讨论的经典命题，朱熹也专门讲过。</p>
+  <p style="margin-top:8px"><b>徐爱的敏锐：</b>朱熹的解释是"道心为主，人心听命"——把人心当需要压制的下属。徐爱学了阳明的"精一"（心只有一个）之后，发现这话不对劲：如果心只有一个，哪来的"主"和"听命"两个角色？他替我们发现了朱熹体系的裂缝。</p>
+  <p style="margin-top:8px"><b>阳明的回答：</b>不是两颗心在打架，是<b>同一颗心</b>——正的时候是道心，偏的时候是人心。这就把"人欲"从"另一个东西"变成"心的失正状态"：不用去消灭一个敌人，只需把心扶正。</p>
+</section>
+
+<section>
+  <div class="sec-title">典故解释</div>
+  <p><b>「人心惟危，道心惟微」</b>——《尚书》十六字心传。危=危险难安，微=精微难见。人心容易走偏，道心微妙难察。阳明不否认这个说法，而是重新解释：不是两个心，是一个心的两种状态。</p>
+  <p style="margin-top:8px"><b>「精一」</b>——"惟精惟一"：精=精纯不杂，一=专一不二。阳明常把"精一"和"致良知"连用：功夫就是让心回到精纯专一（道心）的状态。这一课标题里徐爱说的"精一之训"就是指阳明的这个教导。</p>
+  <p style="margin-top:8px"><b>「程子」</b>——指程颐（伊川先生），二程之一。程颐说"人心即人欲，道心即天理"，阳明评价他"语若分析而意实得之"——话虽然分了两个词，意思其实抓到了（因为程颐也认为天理人欲不能并存）。</p>
+</section>
+
+<section>
+  <div class="sec-title">拆解：这一课在讲什么</div>
+  <table>
+    <tr><th></th><th>朱熹的理解</th><th>阳明的理解</th></tr>
+    <tr><td><b>道心/人心</b></td><td>两个心：道心当主，人心听命</td><td><b>一个心</b>：正=道心，偏=人心</td></tr>
+    <tr><td><b>人欲</b></td><td>要压制的对象</td><td>心的失正状态（扶正即可）</td></tr>
+    <tr><td><b>功夫</b></td><td>主仆分工，压制人心</td><td>精一——让心回到纯粹</td></tr>
+  </table>
+  <p style="margin-top:10px"><b>关键洞察：</b>如果道心人心是两个心，那"恶"就成了心的外来户——你永远在跟一个敌人搏斗。阳明说：恶不是外来的，是<b>同一颗心跑偏了</b>。所以功夫不是"消灭人心"，是"正心"——一念正，人心即道心。这和他"格物=正念头"完全一致。</p>
+  <p style="margin-top:8px"><b>对现代人的意义：</b>别把"坏念头"当成"另一个我"来审判。焦虑、烦躁、嫉妒来了，不是"我心里住进了恶魔"，是<b>这颗心暂时跑偏了</b>——把它扶正就好。这比"自我斗争"省力得多，也慈悲得多。</p>
+</section>
+
+<section>
+  <div class="sec-title gold">寓言故事 · 一杯水</div>
+  <div class="fable">
+    <div class="f-title">浑浊的不是另一杯水，是同一杯水</div>
+    <p>一杯清水，倒进一把泥土，摇晃几下——水浑浊了。</p>
+    <p style="margin-top:6px">你会有两个选择：一是把这杯浑水倒掉，再去接一杯新的（但新水也可能再被弄浑）；二是把杯子放稳，等泥沙慢慢沉淀——<b>水还是那杯水，泥沙沉下去，清水自然回来了</b>。</p>
+    <p style="margin-top:6px">阳明说的正是后者：浑浊（人心）和清澈（道心）是同一杯水（同一颗心）的两种状态。不是换一颗心，是让泥沙沉淀——静下来，正起来，清水自现。</p>
+  </div>
+  <p style="font-size:0.88rem; color:var(--ink-soft); margin-top:8px"><b>和本课的呼应：</b>焦虑、烦躁来时，不必自责"我怎么这么差"——那是在审判另一颗心。只需像放稳杯子一样，让心静下来，等泥沙沉底。<b>正心不是换心，是沉淀。</b></p>
+</section>
+
+<section>
+  <div class="sec-title gold">建议背诵</div>
+  <div class="fable">
+    <div class="f-title">📖 这段值得背下来</div>
+    <p style="font-size:1.05rem; font-weight:700; margin:8px 0">"人心之得其正者即道心，道心之失其正者即人心，初非有二心也。"</p>
+    <p><b>白话：</b>人心正了就是道心，道心偏了就是人心——本来就不是两颗心。</p>
+    <p style="margin-top:6px"><b>为什么值得背：</b>这句话能救命。它告诉你：你的坏情绪不是"另一个你"在捣乱，是这颗心暂时偏了——<b>不用自我审判，只需扶正</b>。背下它，自我攻击的时刻会少很多，自我修正会快很多。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="insight">
+    <div class="i-title">不强制，但可能会心</div>
+    <p>你有没有过这样的时刻：做完一台手术，又累又烦躁，对家属说话冲了——事后后悔"我怎么这样"？</p>
+    <p style="margin-top:6px">阳明会说：那不是"坏的你"冒出来了，是同一颗心被疲惫和压力带偏了。不需要审判自己，只需要觉察、扶正——<b>下一次，先停一秒，把心扶正，再开口。</b>这就是"事上磨练"在临床的日常版本。</p>
+  </div>
+</section>
+
+<div class="next">下一课：徐爱问"至善只求诸心"——心外无理，事上如何落实</div>
+
+</body>
+</html>
