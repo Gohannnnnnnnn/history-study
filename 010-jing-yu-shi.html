@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第十课 · 经与史 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f6f8fc;
+    --card: #ffffff;
+    --ink: #22304a;
+    --ink-soft: #5a6b8c;
+    --accent: #2b5fd9;
+    --accent-soft: #e7eefc;
+    --gold: #a87a1f;
+    --gold-soft: #faf3e3;
+    --line: #dde5f2;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 18px 60px;
+  }
+  header { text-align: center; padding: 28px 16px 20px; }
+  .logo { color: var(--accent); font-size: 1.1rem; font-weight: 600; letter-spacing: 2px; }
+  .course-no {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin: 12px 0 8px;
+  }
+  h1 { font-size: 1.5rem; color: var(--ink); font-weight: 700; }
+  .sub { color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px;
+    margin: 16px 0;
+  }
+  .sec-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .sec-title.gold { color: var(--gold); border-left-color: var(--gold); }
+  .original {
+    font-size: 0.95rem;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    color: #33415c;
+  }
+  .original .q { font-weight: 600; color: var(--ink); }
+  .original p { margin: 8px 0; }
+  .translation p { margin: 8px 0; }
+  .translation .speaker { color: var(--accent); font-weight: 600; }
+  table { width:100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; }
+  th { background: var(--accent-soft); padding: 8px 10px; text-align: left; color: var(--ink); }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fable {
+    background: var(--gold-soft);
+    border: 1px solid #ecdcb8;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .fable .f-title { font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+  .insight {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 0.92rem;
+  }
+  .insight .i-title { font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .next {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-top: 8px;
+  }
+  .back-btn {
+    position: fixed;
+    left: 12px;
+    z-index: 100;
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(34,48,74,.12);
+  }
+  .back-btn:hover { border-color: var(--accent); }
+  .back-top-left { top: 12px; }
+  .back-bottom-left { bottom: 12px; }
+</style>
+</head>
+<body>
+
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 010 课</div>
+  <h1>经与史</h1>
+  <div class="sub">《传习录》徐爱录 · 孔子删述六经 · 以道为本</div>
+  <div>
+    <span class="tag">经史关系</span>
+    <span class="tag">文中子</span>
+    <span class="tag">删述六经</span>
+    <span class="tag">三代之治</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">背景 · 徐爱在问什么</div>
+  <p>徐爱录到了第十一条，话题从"心即理""知行合一"转向了 <b>经典本身的性质</b>。徐爱问王阳明怎么评价文中子（王通）和韩愈——这两个人历史上争议很大：王通模仿孔子写"王氏六经"，被批评为"好名自大"；韩愈是文坛领袖，但思想深度不如王通。</p>
+  <p style="margin-top:8px"><b>但徐爱真正想问的不是人物评价，而是：</b>孔子删述六经、后人著述、王通拟经——这三者到底有什么区别？什么才是"明道"的正确方式？</p>
+  <p style="margin-top:8px">阳明的回答从这里展开，一直延伸到"经与史有什么关系""三代之治能不能复"。这一课是徐爱录中篇幅最长、思想最密集的部分之一，也是阳明 <b>经学观</b> 的系统表达。</p>
+</section>
+
+<section>
+  <div class="sec-title">原文一 · 文中子与韩退之</div>
+  <div class="original">
+    <p class="q">爱问文中子、韩退之①。</p>
+    <p>先生曰："退之，文人之雄耳；文中子，贤儒也。后人徒以文词之故推尊退之，其实退之去文中子远甚。"</p>
+    <p class="q">爱问："何以有拟经之失②？"</p>
+    <p>先生曰："拟经恐未可尽非。且说后世儒者著述之意，与拟经如何？"</p>
+    <p class="q">爱曰："世儒著述，近名之意不无，然期以明道。拟经纯若为名。"</p>
+    <p>先生曰："著述以明道，亦何所效法？"</p>
+    <p class="q">爱曰："孔子删述'六经'，以明道也。"</p>
+    <p>先生曰："然则拟经独非效法孔子乎？"</p>
+  </div>
+  <div style="font-size:0.78rem;color:var(--ink-soft);margin-top:4px">
+    ①文中子：王通，隋代大儒，仿孔子作"王氏六经"。<br>
+    ②拟经：模仿经书体裁写作。
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱问：</span>王通和韩愈这两个人怎么样？</p>
+    <p><span class="speaker">阳明答：</span>韩愈，不过是文人中的英雄罢了；王通，才是真正的贤儒。后人只因为文采好就推尊韩愈，其实韩愈比王通差远了。</p>
+    <p><span class="speaker">徐爱问：</span>那王通为什么会有"模仿经书"的过失？</p>
+    <p><span class="speaker">阳明答：</span>"模仿经书"恐怕不能全盘否定。你先说说，后世儒者的著述和模仿经书，有什么区别？</p>
+    <p><span class="speaker">徐爱说：</span>后世儒者著述，虽然不能说完全没有追求名声的念头，但总归是为了阐明大道。模仿经书，纯粹是为了名声。</p>
+    <p><span class="speaker">阳明说：</span>著述以阐明大道，又是效法谁呢？</p>
+    <p><span class="speaker">徐爱说：</span>孔子删述"六经"，就是为了阐明大道。</p>
+    <p><span class="speaker">阳明说：</span>那么模仿经书，难道不也是在效法孔子吗？</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 孔子不得已而删述</div>
+  <div class="original">
+    <p>先生曰："……天下之大乱，由虚文胜而实行衰也。使道明于天下，则'六经'不必述。删述'六经'，孔子不得已也。……孔子述'六经'，惧繁文之乱天下，惟简之而不得，使天下务去其文以求其实，非以文教之也。"</p>
+    <p style="margin-top:8px">"天下所以不治，只因文盛实衰。人出己见，新奇相高，以眩俗取誉，徒以乱天下之聪明，涂天下之耳目，使天下靡然争务修饰文词，以求知于世，而不复知有敦本尚实、反朴还淳之行：是皆著述者有以启之。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>天下大乱，是因为空虚的言论盛行、实际的行动衰微。如果大道已经显明于天下，那么"六经"根本不需要再去阐述。删述"六经"，孔子是不得已而为之。</p>
+    <p style="margin-top:8px">孔子传述"六经"，是担心繁文缛节扰乱天下，想精简到不能再精简，他让人们务必忽略六经的辞藻文饰，而去追求其中的实质意义——不是用文辞来教化天下的。</p>
+    <p style="margin-top:8px">天下之所以混乱不治，就是因为繁文盛行、践行实事衰落。人们各抒己见，以新奇观点相互竞争，以花哨俗丽博取虚誉，只会混乱天下人的智慧，蒙蔽天下人的耳目，使天下人争相修饰文辞以博取名声，而不再知道有敦本务实、返璞归真的行为——这些都是著述的人所导致的。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文三 · 经与传 · 圣人只欲正人心</div>
+  <div class="original">
+    <p class="q">爱曰："《春秋》一经，若无《左传》，恐亦难晓。"</p>
+    <p>先生曰："《春秋》必待《传》而后明，是歇后谜语矣。圣人何苦为此艰深隐晦之词？"</p>
+    <p>……"圣人述'六经'，只是要正人心，只是要存天理、去人欲。……若是一切纵人欲、灭天理的事，又安肯详以示人？是长乱导奸也。"</p>
+    <p style="margin-top:8px">又曰："孔子云'吾犹及史之阙文也'，孟子云'尽信书，不如无书。吾于《武成》，取二三策而已'。圣人只是要删去繁文，后儒却只要添上。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱问：</span>《春秋》这部经，如果没有《左传》，恐怕也难看懂。</p>
+    <p><span class="speaker">阳明答：</span>《春秋》必须等到《左传》才能看懂，那就成歇后谜语了。圣人何苦写这些艰深隐晦的词句呢？</p>
+    <p style="margin-top:8px">圣人传述"六经"，只是要端正人心，只是要存天理、去人欲。如果是一纵容人欲、灭天理的事，又怎肯详细给人解说呢？那是在助长混乱、引导奸邪。</p>
+    <p style="margin-top:8px">孔子说"我还见过史书存疑疏漏的地方"，孟子说"完全相信书，就不如无书。我认为《武成》这篇只有两三页可取罢了"。圣人只是要删去繁文，后世儒者却还要添上。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文四 · 三代之治</div>
+  <div class="original">
+    <p class="q">爱问："尧、舜以前事，如何略不少见？"</p>
+    <p>先生曰："羲、黄之世，其事阔疏，传之者鲜矣……其时全是淳庞朴素、略无文采的气象。此便是太古之治，非后世可及。"</p>
+    <p style="margin-top:8px">又曰："唐、虞以上之治，后世不可复也，略之可也；三代以下之治，后世不可法也，削之可也；<b>惟三代之治可行。</b>然而世之论三代者，不明其本，而徒事其末，则亦不可复矣！"</p>
+    <p style="margin-top:8px">"专事无为，不能如三王之因时致治，而必欲行以太古之俗，即是佛、老的学术。因时致治，不能如三王之一本于道，而以功利之心行之，即是伯者以下事业。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">徐爱问：</span>尧、舜以前的事，为什么几乎看不到记载？</p>
+    <p><span class="speaker">阳明答：</span>伏羲、黄帝的时代，事迹已经遥远，流传下来的很少了。当时都是淳朴自然、毫无文饰雕琢的气象，这就是太古的治世，不是后世能比的。</p>
+    <p style="margin-top:8px">唐尧、虞舜以前的治世，后世无法重复，可以忽略；夏、商、周以后的治世，后世无法效仿，可以删削。<b>只有三代的治世还可以施行。</b>但世上论说三代的人，不了解其根本，只效仿细枝末节，那就还是无法恢复。</p>
+    <p style="margin-top:8px">专门讲无为而治，却不能像三王那样根据时代需要来治理，硬要推行太古的习俗——这是佛、老的学问。根据时代需要治理，却不能像三王那样以道为根本，而是凭功利之心去做——这是霸道。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">典故解释</div>
+  <p><b>「文中子拟经」</b>——文中子王通是隋代大儒，仿照孔子"六经"的体例，撰写了"王氏六经"（《续书》《续诗》《礼论》《乐论》《赞易》《元经》）。后人批评他"好名自大"——一个小儒生，凭什么模仿圣人？阳明却替他辩护："拟经恐未可尽非。"因为这个行为本身是在效法孔子——而孔子删述六经，也是"不得已"而为之，为了"明道"。</p>
+  <p style="margin-top:8px"><b>「歇后谜语」</b>——歇后谜语是指把一句话的最后一个字隐去。阳明用这个比喻讽刺"《春秋》必须靠《左传》才能看懂"的说法——如果经书离开了传注就没人懂，那圣人写它干什么？</p>
+  <p style="margin-top:8px"><b>「三王」</b>——夏禹、商汤、周文王/武王。三王治世之所以值得效法，不是因为他们的具体制度，而是因为他们"一本于道"——以道为根本，根据时代需要来施政。</p>
+  <p style="margin-top:8px"><b>「《武成》取二三策」</b>——出自《孟子》。孟子说《尚书·武成》篇讲武王伐纣"血流漂杵"，他不敢相信——仁者无敌，怎么会杀得血流成河？所以只取其中两三页可信的内容。阳明引用这句话，说明"经书不是神圣不可质疑的，要以道为标准"。</p>
+</section>
+
+<section>
+  <div class="sec-title">拆解：这一课在讲什么</div>
+  <table>
+    <tr><th></th><th>孔子删述六经</th><th>后世儒者著述</th><th>文中子拟经</th></tr>
+    <tr><td><b>目的</b></td><td>明道、正人心</td><td>近名、炫文采</td><td>效法孔子以明道</td></tr>
+    <tr><td><b>方法</b></td><td>删繁就简</td><td>添枝加叶</td><td>模仿形式</td></tr>
+    <tr><td><b>阳明评价</b></td><td>不得已而为之</td><td>使天下文盛实衰</td><td>未可尽非</td></tr>
+  </table>
+  <p style="margin-top:10px"><b>这一课最核心的洞见——"文盛实衰"：</b>阳明认为，天下大乱的根本原因不是"知识不够"，而是"文字太多、行动太少"。人们花大量时间在概念辨析、注疏考据、文辞修饰上，却忘了回到事情本身、回到心体上去做功夫。你读《传习录》本身也是在"读书"——但阳明的意思是：读书是为了明道，明道是为了行。读完了，放下书，去行动。</p>
+  <p style="margin-top:8px"><b>"惟三代之治可行"并不是复古：</b>阳明说"三代之治可行"，但紧接着说"不明其本，而徒事其末，则亦不可复"。他要学的是三代的"道"（以道为本、因时致治），而不是三代的"法"（具体制度）。<b>这是"法古而不泥于古"——学精神，不学形式。</b>和前面的"心即理"一致：理不在古书里，在当下这颗心里。</p>
+</section>
+
+<section>
+  <div class="sec-title gold">寓言故事 · 买椟还珠</div>
+  <div class="fable">
+    <div class="f-title">过犹不及，古之鉴也</div>
+    <p>《韩非子》里有个著名的故事：</p>
+    <p style="font-style:italic; margin:8px 0">楚人有卖其珠于郑者，为木兰之柜，薰以桂椒，缀以珠玉，饰以玫瑰，辑以羽翠。郑人买其椟而还其珠。此可谓善卖椟矣，未可谓善鬻珠也。</p>
+    <p>楚国有人到郑国去卖珍珠。他用名贵的木兰木做了一个匣子，用桂椒香料熏过，镶上珠玉宝石，缀上翡翠羽毛。郑国人买下了这个匣子，却把珍珠还了回去。</p>
+    <p style="margin-top:6px">这不就是"文盛实衰"的绝妙写照吗？后世儒者著述，把"匣子"做得越来越精美——考证越来越细、注疏越来越厚、争论越来越繁——但"珍珠"（道）却被忽略了。孔子删述六经就是要把"匣子"做简，让人一眼看到珍珠。</p>
+  </div>
+  <p style="font-size:0.88rem; color:var(--ink-soft); margin-top:8px"><b>和本课的呼应：</b>阳明说"使天下务去其文以求其实，非以文教之也"——和"买椟还珠"一模一样。读《传习录》也一样：不要沉迷于原文的辞藻和注释的考据，要回到那颗心——"这说的和我有什么关系？"</p>
+</section>
+
+<section>
+  <div class="sec-title gold">建议背诵</div>
+  <div class="fable">
+    <div class="f-title">📖 这段值得背下来</div>
+    <p style="font-size:1.05rem; font-weight:700; margin:8px 0">"天下所以不治，只因文盛实衰。人出己见，新奇相高，以眩俗取誉，徒以乱天下之聪明，涂天下之耳目。"</p>
+    <p><b>白话：</b>天下之所以混乱，就是因为虚文盛行、实干衰落。人们各抒己见，以新奇的观点相互攀比，用花哨的东西博取虚名，白白混乱了天下人的智慧，蒙蔽了天下人的耳目。</p>
+    <p style="margin-top:6px"><b>为什么值得背：</b>这句话放在今天依然有效。信息爆炸的时代，人人都在输出观点、追逐热点。真正稀缺的，是"敦本尚实、反朴还淳"——回到事情本身，少说多做。<b>背下它，你会在每次想"多说点什么"的时候，问自己：这是"文"还是"实"？</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="insight">
+    <div class="i-title">不强制，但可能会心</div>
+    <p>你最近在做科研、学Python、写论文——有没有觉得"文"越来越重？</p>
+    <p style="margin-top:6px">写标书要讲究格式，发论文要讲究措辞，学编程要刷各种教程——这些都是"文"。但"实"是什么？<b>是标书里那个真正能帮到患者的研究方向，是代码跑通后能解决问题的功能，是论文里那个真实可靠的发现。</b></p>
+    <p style="margin-top:6px">不是不要"文"，而是"文"要为"实"服务。孔子不得已才删述六经，因为当时"文"已经太多。我们今天的处境，何尝不是"文盛实衰"？</p>
+  </div>
+</section>
+
+<div class="next">下一课：经史明善恶——示法杜奸，经史本一 · 徐爱跋</div>
+
+</body>
+</html>
