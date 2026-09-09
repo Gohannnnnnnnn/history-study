@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 012 课 · 主一之功 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.6rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .original b, .translation b { color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 012 课</div>
+  <h1>主一之功</h1>
+  <div class="sub">《传习录》陆澄录 · 第一条</div>
+  <div>
+    <span class="tag">主一</span>
+    <span class="tag">逐物</span>
+    <span class="tag">专主一个天理</span>
+    <span class="tag">陆澄录开篇</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文</div>
+  <div class="original">
+    <p class="q">陆澄问："'主一'之功①，如读书则一心在读书上，接客则一心在接客上，可以为'主一'乎？"</p>
+    <p>先生曰："好色则一心在好色上，好货则一心在好货上，可以为'主一'乎？是所谓<b>逐物</b>，非'主一'也。<b>'主一'是专主一个天理</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"关于'主一'的功夫，比如读书就一心在读书上用功，接待客人就一心在接待客人上用功，这样可以算是'主一'吗？"</p>
+    <p><span class="speaker">阳明答：</span>"贪图美色就一心在贪图美色上用功，喜爱财物就一心在喜爱财物上用功，这能算'主一'吗？这只是所谓的<b>追逐外物</b>，不是'主一'。<b>'主一'是把心神专注在天理上</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 陆澄与"主一"</div>
+  <div class="bg-card">
+    <p><b>陆澄</b>（字原静），阳明弟子，善问、好穷究。他记录的问答共 80 则，是《传习录》上卷最长的一部分——主题全是<b>功夫怎么下</b>，后世称"事上磨练"。本课是陆澄录的开篇。</p>
+    <p><b>"主一"出处：</b>出自二程："所谓敬者，主一之谓敬；所谓一者，无适之谓一。"——主一就是<b>专一、无杂念</b>，是"敬"（工夫总纲）的核心。</p>
+    <p><b>陆澄的理解：</b>专心做眼前的事（读书一心读书、接客一心接客）＝主一。这很符合直觉——我们平时也这么想。</p>
+    <p><b>阳明为什么说不对？</b>因为"一心在好色上、一心在好货上"也是专心——难道那也是主一？<b>专心本身不是主一，专心的对象才是关键。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 被鱼牵的人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>河边两个人钓鱼。第一个人鱼漂一动，心就全扑在鱼上——鱼竿一沉，他跟着鱼跑，鱼往哪窜他往哪追，最后掉进了河里。第二个人也钓鱼，鱼漂动了，他稳稳收竿——鱼上来就上来，不上来也不急。</p>
+    <p>第一个人以为自己"一心一意在钓鱼"，其实他是<b>被鱼牵着走</b>（逐物）；第二个人才是真正的主一——他的专注在自己心里，不在鱼身上。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · "主一"到底主什么</div>
+  <div class="bg-card">
+    <p><b>逐物 vs 主一，区别不在"专不专心"，在"心被谁牵着"：</b></p>
+    <p>· <b>逐物</b>：心被外物牵着——好色、好货、甚至"一定要完成任务"的焦虑，都是被那个"物"牵着走。</p>
+    <p>· <b>主一</b>：心有一个主宰（天理/良知），做事时是"我"在做事，不是"事"在拖我。</p>
+    <p><b>用普通人的话说：</b>同样是"一心在刷手机"，被内容裹着停不下来是逐物；清楚自己在刷、说停就停是主一。同样是"一心在工作"，被业绩追着跑是逐物；知道自己为什么做、做的时候心安是主一。</p>
+    <p><b>注意：</b>阳明不是反对专心——是反对"专心"被误解成"跟着外物跑"。专心之外还要有个主宰：<b>我这个心，到底被什么主着？</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>"主一"是专主一个天理。</b><br>
+    一句话：真正的专注不是"被事牵着"，是"心里有主宰地做事"。
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最实用的启示：</b>做事前问自己一句——"我现在是被这件事牵着，还是心里有数地做？"刷手机刷到停不下来、加班加到麻木、学习学到焦虑，都是"逐物"的样子；<b>主一不是不做，是心不被他物主宰。</b>陆澄录 80 则，就从这一问开始。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 001 · 主一之功</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
