@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阳明外功日课 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 16px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:6px; }
+  .quote-hero {
+    background:var(--deep); color:#dbeafe; border-radius:12px; padding:18px 20px;
+    margin:16px 0; font-size:0.98rem; text-align:center;
+  }
+  .quote-hero b { color:#fff; }
+  .quote-hero .src { display:block; font-size:0.75rem; color:#93b4e8; margin-top:8px; }
+  h2 {
+    font-size:1.1rem; color:var(--deep); margin:26px 0 10px;
+    padding-left:10px; border-left:4px solid var(--primary);
+  }
+  .plan { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .plan .head { display:flex; align-items:baseline; gap:8px; margin-bottom:6px; }
+  .plan .num {
+    flex-shrink:0; width:26px; height:26px; border-radius:50%;
+    background:var(--primary); color:#fff; font-size:0.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .plan .name { font-weight:700; color:var(--deep); font-size:1rem; }
+  .plan .time { margin-left:auto; font-size:0.72rem; color:var(--ink-soft); background:var(--panel); padding:1px 8px; border-radius:10px; }
+  .plan p { margin:6px 0; font-size:0.93rem; }
+  .plan .do { color:var(--green); font-weight:600; }
+  .plan .why { color:var(--ink-soft); font-size:0.85rem; font-style:normal; }
+  .week-plan { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .week-plan table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+  .week-plan td { padding:8px 6px; border-bottom:1px solid var(--line); }
+  .week-plan td:first-child { color:var(--primary); font-weight:700; white-space:nowrap; width:70px; }
+  .check-table { width:100%; border-collapse:collapse; font-size:0.82rem; background:#fff; border-radius:12px; overflow:hidden; }
+  .check-table th { background:var(--panel); color:var(--deep); padding:8px 4px; font-size:0.75rem; }
+  .check-table td { border:1px solid var(--line); padding:9px 4px; text-align:center; height:34px; }
+  .check-table td:first-child { color:var(--ink-soft); font-size:0.75rem; }
+  .log-box { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .log-box .line { border-bottom:1px dashed var(--line); padding:7px 0; font-size:0.9rem; color:var(--ink-soft); }
+  .log-box .line b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:13px 15px; margin:12px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .warn { background:#fdf6e7; border:1px solid #f0e0b8; border-radius:10px; padding:13px 15px; margin:12px 0; font-size:0.92rem; }
+  .warn b { color:var(--gold); }
+  footer { text-align:center; color:var(--ink-soft); font-size:0.8rem; margin-top:30px; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <h1>阳明外功日课</h1>
+  <div class="sub">六练 · 在事上磨 · 每天 10 分钟</div>
+</header>
+
+<div class="quote-hero">
+  <b>"人须在事上磨，方立得住；方能静亦定，动亦定。"</b>
+  <span class="src">《传习录》下卷 · 陈九川录</span>
+</div>
+
+<p style="font-size:0.95rem">读原文是内功——明白道理。但阳明最反对的就是"只明白道理"。真正的功夫在<b>事上</b>：在具体的事里磨自己的心。下面是六项可以日常做的外功，每项都很短，在医院、在家里、在地铁上都能做。</p>
+
+<div class="warn">
+  <b>起步建议：</b>不要六项一起上。第一周只练 <b>①事上磨</b> 一项，做顺了再加。<b>一天做一项也算成功</b>——功夫是长跑，不是冲刺。
+</div>
+
+<h2>六练详解</h2>
+
+<div class="plan">
+  <div class="head"><span class="num">1</span><span class="name">事上磨</span><span class="time">每天 5 分钟</span></div>
+  <p class="do">做法：每天挑一件"该做但不想做"的小事——那通该打的电话、那份该写的记录、那次该道的歉、那句该说的话。去做它。</p>
+  <p>做的时候<b>观察自己的心</b>：是抗拒？烦躁？想逃？——<b>磨的就是这个</b>。做完记一句：这件事磨掉了我哪一点。</p>
+  <p class="why">为什么有效：阳明说"静亦定，动亦定"——静坐时心定不算本事，动起来（做事时）还能定，才是真功夫。逃避的事正是最好的磨刀石。</p>
+</div>
+
+<div class="plan">
+  <div class="head"><span class="num">2</span><span class="name">省察克治</span><span class="time">睡前 3 分钟</span></div>
+  <p class="do">做法：睡前问自己三句——今天哪件事我的<b>念头</b>不对？哪句话我<b>说错</b>了？明天怎么改？</p>
+  <p>不用写长篇，一句话即可。重点不是自责，是<b>看清</b>——看清了，明天自然不一样。</p>
+  <p class="why">为什么有效：阳明说"省察克治之功，无时而可间"——不是等犯错才反省，是每天都清扫。像每天刷牙，不攒着。</p>
+</div>
+
+<div class="plan">
+  <div class="head"><span class="num">3</span><span class="name">知行合一即时练</span><span class="time">随时</span></div>
+  <p class="do">做法：凡是"想到了、该做、能做"的事，<b>5 秒内起身去做</b>。不给"等会儿再说"留缝隙。</p>
+  <p>想给父母打电话 → 现在就打；想起该回的消息 → 现在就回；想喝水 → 现在就去倒。</p>
+  <p class="why">为什么有效：阳明说"知而不行，只是未知"。这一练就是活体实验——<b>你会发现"想做"和"去做"之间，隔着多少自我欺骗</b>。</p>
+</div>
+
+<div class="plan">
+  <div class="head"><span class="num">4</span><span class="name">静坐澄心</span><span class="time">每天 10 分钟</span></div>
+  <p class="do">做法：早晨或睡前静坐，只看着呼吸和念头的来去，不评判、不追赶。念头跑了，拉回来，继续。</p>
+  <p>心乱如麻的日子，这一项就是"药"（对应上一课"觉纷扰则静坐"）。</p>
+  <p class="why">为什么有效：静坐是把心"静置"，让浑水里的泥沙沉下去。但记住阳明后来的转向——<b>静坐是药，不是目的；真功夫还在事上。</b></p>
+</div>
+
+<div class="plan">
+  <div class="head"><span class="num">5</span><span class="name">相下练习</span><span class="time">每周 1 次</span></div>
+  <p class="do">做法：对一个人主动"相下"——向朋友请教一件他擅长的事、向同事认一个小错、真诚夸一次别人（不是客套）。</p>
+  <p class="why">为什么有效：对应"处朋友，务相下，则得益，相上则损"。<b>相下不是示弱，是把"我"放低一点，让关系往下靠。</b>越靠越近，越顶越远。</p>
+</div>
+
+<div class="plan">
+  <div class="head"><span class="num">6</span><span class="name">遇事三秒</span><span class="time">随时</span></div>
+  <p class="do">做法：想发火、想抱怨、想逃避的瞬间，<b>停 3 秒</b>，问自己：我现在的念头，是良知还是私欲？</p>
+  <p>不用立刻做到"不发火"——<b>能停 3 秒，就已经赢了</b>。停下来的那一刻，主宰就回来了。</p>
+  <p class="why">为什么有效：这就是"主一"（第一课）在情绪上的应用——不让外物牵着走，心里先有个主宰。</p>
+</div>
+
+<h2>第一周怎么开始</h2>
+<div class="week-plan">
+  <table>
+    <tr><td>第 1-7 天</td><td>只练 <b>①事上磨</b>：每天一件小事 + 记一句话。其他五项知道了就好，不用做。</td></tr>
+    <tr><td>第 2 周</td><td>加 <b>②省察克治</b>（睡前 3 分钟三问）</td></tr>
+    <tr><td>第 3 周</td><td>加 <b>③知行合一即时练</b>（治拖延）</td></tr>
+    <tr><td>第 4 周</td><td>加 <b>⑥遇事三秒</b>（情绪刹车）</td></tr>
+    <tr><td>随时可用</td><td><b>④静坐澄心</b>（心乱时的药）、<b>⑤相下练习</b>（每周一次）</td></tr>
+  </table>
+</div>
+
+<h2>每日打卡表</h2>
+<table class="check-table">
+  <tr>
+    <th>日期</th><th>事上磨</th><th>省察</th><th>5秒行动</th><th>静坐</th><th>遇事三秒</th>
+  </tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>　</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>事上磨 · 记录格式</h2>
+<div class="log-box">
+  <div class="line"><b>日期：</b></div>
+  <div class="line"><b>今天想逃避的事：</b></div>
+  <div class="line"><b>做了吗：</b>　做了 / 没做</div>
+  <div class="line"><b>做的时候，心是什么状态：</b>（抗拒？烦躁？硬着头皮？）</div>
+  <div class="line"><b>磨掉了什么：</b>（一句话）</div>
+</div>
+<p style="font-size:0.9rem;color:var(--ink-soft)">可以写在这个页面下方，也可以直接发给我——我帮你攒成你自己的《传习录》。</p>
+
+<h2>一句话记住</h2>
+<div class="tip">
+  <b>内功是明白道理，外功是把道理做出来。</b><br>
+  阳明说"知是行之始，行是知之成"——知道只是开始，做到了才叫完成。<br>
+  <b>每天一件小事，磨一句真话——这比读十页书更接近阳明。</b>
+</div>
+
+<footer>为己之学 · 阳明外功日课 · 在事上磨</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
