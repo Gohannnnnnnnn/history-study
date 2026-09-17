@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阳明心学 · 育儿版 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 16px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:6px; }
+  .quote-hero {
+    background:var(--deep); color:#dbeafe; border-radius:12px; padding:18px 20px;
+    margin:16px 0; font-size:0.98rem; text-align:center;
+  }
+  .quote-hero b { color:#fff; }
+  .quote-hero .src { display:block; font-size:0.75rem; color:#93b4e8; margin-top:8px; }
+  h2 {
+    font-size:1.1rem; color:var(--deep); margin:26px 0 10px;
+    padding-left:10px; border-left:4px solid var(--primary);
+  }
+  .principle { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .principle .name { font-weight:700; color:var(--deep); font-size:1rem; margin-bottom:6px; }
+  .principle p { margin:6px 0; font-size:0.94rem; }
+  .scene { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:14px 0; }
+  .scene .title { font-weight:700; color:var(--deep); font-size:0.98rem; margin-bottom:8px; }
+  .say { border-radius:8px; padding:10px 12px; margin:8px 0; font-size:0.92rem; }
+  .say.bad { background:#fef2f2; border-left:3px solid var(--red); }
+  .say.good { background:#f0faf5; border-left:3px solid var(--green); }
+  .say .label { font-weight:700; font-size:0.78rem; display:block; margin-bottom:3px; }
+  .say.bad .label { color:var(--red); }
+  .say.good .label { color:var(--green); }
+  .why { background:var(--panel); border-radius:8px; padding:9px 12px; margin-top:8px; font-size:0.86rem; color:var(--ink-soft); }
+  .why b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:13px 15px; margin:12px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .warn { background:#fdf6e7; border:1px solid #f0e0b8; border-radius:10px; padding:13px 15px; margin:12px 0; font-size:0.92rem; }
+  .warn b { color:var(--gold); }
+  .checklist { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .checklist .line { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.92rem; }
+  .checklist .line:last-child { border-bottom:none; }
+  footer { text-align:center; color:var(--ink-soft); font-size:0.8rem; margin-top:30px; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <h1>阳明心学 · 育儿版</h1>
+  <div class="sub">孩子不需要"学"心学·他本来就活在里面</div>
+</header>
+
+<div class="quote-hero">
+  <b>"见孺子入井，自然知恻隐，此便是良知，不假外求。"</b>
+  <span class="src">《传习录》上卷 · 徐爱录 · 论致知</span>
+</div>
+
+<p style="font-size:0.95rem">三岁半的孩子听不懂"心即理""致良知"——他的大脑还没有抽象思维。但他<b>本来就活在心学里</b>：他看到小朋友哭会心疼，他分东西给别人的那个动作是自发的，他没有"知道该做却做不到"的纠结。</p>
+<p style="font-size:0.95rem"><b>所以养育的方向不是"教他心学"，是"别把他本有的良知掐掉"。</b></p>
+
+<h2>三个原则</h2>
+
+<div class="principle">
+  <div class="name">① 保护，而不是塑造</div>
+  <p>孩子的善念是天生的。大人的任务不是往他脑子里装道德，是<b>看见他的善念、说出来、让它长大</b>——而不是用"这有什么好哭的""你别多管闲事"把它掐掉。</p>
+</div>
+
+<div class="principle">
+  <div class="name">② 身教，而不是言传</div>
+  <p>阳明说"如好好色，如恶恶臭"——真知道的人，做出来是自然的。<b>孩子不听你说什么，他看你做什么。</b>你耐心，他学耐心；你遇事不慌，他学不慌。</p>
+</div>
+
+<div class="principle">
+  <div class="name">③ 不交换，而不是用奖惩</div>
+  <p>"做好事就给你糖""不听话妈妈就不爱你了"——这会让孩子的善念变成<b>为了换奖励</b>。良知一旦被交换，就变成了算计。</p>
+</div>
+
+<h2>六个实战场景</h2>
+
+<div class="scene">
+  <div class="title">场景一 · 他抢了小朋友的玩具</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>把玩具抢回来还给人家："你怎么这么自私！快道歉！"</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>先接住："你特别想玩这个小汽车，对不对？"——等他点头，再问："你看他哭了，你心里是什么感觉？"</div>
+  <div class="why"><b>为什么：</b>良知不是被骂出来的，是被"看见自己的感受"唤醒的。你说他"自私"，他记住的是"我是个坏孩子"；你问他的感受，他自己心里那个"不太好受"就会浮上来——<b>那个不好受，就是良知。</b></div>
+</div>
+
+<div class="scene">
+  <div class="title">场景二 · 他发脾气、大哭不止</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>"不许哭！再哭就不要你了！"（用恐惧压住情绪）</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>蹲下来，把他抱住，什么都不说，先让他哭完。等平静了再问："刚才那么生气，是因为……对吗？"</div>
+  <div class="why"><b>为什么：</b>3 岁半的孩子情绪调节能力还没发育好，他需要的是<b>被接住</b>，不是被压制。压下去的情绪不会消失，只会潜伏——阳明说那叫"病痛只是潜伏在，终不能绝去，遇事依旧滋长"。</div>
+</div>
+
+<div class="scene">
+  <div class="title">场景三 · 他打了妹妹</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>打他手心，让他"尝尝被打的滋味"。</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>"妹妹现在很疼。你看她哭成这样——你刚才是不是太着急了？我们去看看她好不好？"（带他去关心，而不是逼他道歉）</div>
+  <div class="why"><b>为什么：</b>打回去教的是"谁力气大谁说了算"，不是"我伤到别人了"。<b>让他去关心被伤害的人</b>，那个"心里过不去"的感觉才是真教育。</div>
+</div>
+
+<div class="scene">
+  <div class="title">场景四 · 他说"我不会""我不敢"</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>"这有什么好怕的！你看人家都会了。"（比较 + 否定感受）</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>"有点怕是不是？那我们试试只做一小步——你把这个积木放上去就行。"（把事变小，让他自己完成）</div>
+  <div class="why"><b>为什么：</b>"你看人家"就是往他心里种那棵"好名的大树"（015 课）——让他从小就在比较里找位置。而"事上磨"的做法是：<b>不要求他一次做成，只让他在一件小事上真正做成一次。</b>做成了，信心自己长出来。</div>
+</div>
+
+<div class="scene">
+  <div class="title">场景五 · 他做错事以后撒谎</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>"还敢撒谎？看我不打你！"（重点转向惩罚）</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>先想：他为什么撒谎？——多半是怕。所以先给他安全感："不管怎样，你跟爸爸说实话，我都不生气。我们一起看看怎么解决。"</div>
+  <div class="why"><b>为什么：</b>孩子撒谎几乎都是因为怕。你越惩罚，他越学会藏在后面。<b>把"说实话是安全的"这个经验给他，他下次才敢面对自己的错。</b>（能面对自己的错——这就是"省察克治"的童年版。）</div>
+</div>
+
+<div class="scene">
+  <div class="title">场景六 · 他不肯分享</div>
+  <div class="say bad"><span class="label">❌ 常见做法</span>硬夺过来给别的孩子："要懂得分享！"（当众让他没面子）</div>
+  <div class="say good"><span class="label">✅ 阳明式做法</span>尊重他的物权："这是你的，你可以决定。你愿意分他一块吗？不愿意也没关系。"——如果他分了，事后说一句："你刚才愿意分给他，他心里可高兴了。"</div>
+  <div class="why"><b>为什么：</b>3 岁半正是物权意识建立期，<b>硬逼分享教的是"我的东西我说了不算"</b>，反而更护东西。让他自己决定、并看见"分享带来的好"——他自己愿意做的事情，才是真的。</div>
+</div>
+
+<h2>家长自查清单</h2>
+<div class="checklist">
+  <div class="line">□ 最近一周，有没有用"不听话就不要你了"这类话吓他？</div>
+  <div class="line">□ 有没有当着外人面批评他 / 拿他跟别的孩子比？</div>
+  <div class="line">□ 他心疼小动物、想帮别人的时候，我有没有笑他"这有什么"？</div>
+  <div class="line">□ 我自己最近一次发脾气，是因为他，还是因为我自己累？</div>
+  <div class="line">□ 我要求他做的事，我自己做到了吗？（比如不看手机、好好说话）</div>
+</div>
+
+<div class="warn">
+  <b>最重要的一条：</b>上面这些如果有没做到的，<b>不必自责</b>。阳明说功夫是"念念不忘"，不是"一次做到"。今天比昨天多看见一次自己的反应，就是功夫在长。
+</div>
+
+<h2>一句话记住</h2>
+<div class="tip">
+  <b>三岁半的孩子不需要你教他心学——他本来就活在心学里。需要修的是你。</b><br>
+  你想让他成为什么样的人，你自己先做那样的人。<br>
+  <b>这是唯一一种 3 岁半能听懂的心学教法。</b>
+</div>
+
+<footer>为己之学 · 心学育儿 · 保护良知，不掐苗</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
