@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 018 课 · 宁静的陷阱 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .warn { background:#fdf6e7; border:1px solid #f0e0b8; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .warn b { color:var(--gold); }
+  .original b, .translation b { color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 018 课</div>
+  <h1>宁静的陷阱</h1>
+  <div class="sub">《传习录》陆澄录 · 第十一、十四条</div>
+  <div>
+    <span class="tag">惟精惟一</span>
+    <span class="tag">舂米之喻</span>
+    <span class="tag">未发之中</span>
+    <span class="tag">以循理为主</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 惟精惟一（舂米之喻）</div>
+  <div class="original">
+    <p class="q">问："'惟精''惟一'是如何用功？"</p>
+    <p>先生曰："'<b>惟一</b>'是'<b>惟精</b>'主意，'惟精'是'惟一'功夫，非'惟精'之外复有'惟一'也。'精'字从'米'，姑以米譬之：要得此米纯然洁白，便是'惟一'意；然非加<b>舂簸筛拣</b>'惟精'之功，则不能纯然洁白也。舂簸筛拣是'惟精'之功，然亦不过要此米到纯然洁白而已。博学、审问、慎思、明辨、笃行者，皆所以为'惟精'而求'惟一'也。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"'惟精'和'惟一'该怎么做功夫？"</p>
+    <p><span class="speaker">阳明答：</span>"'惟一'是'惟精'的主意（目标），'惟精'是'惟一'的功夫（做法）——不是'惟精'之外另有一个'惟一'。<b>'精'字从'米'，就拿米来打比方：要让米纯净洁白，这是'惟一'；但不下舂米、簸米、筛米、拣米的功夫，米就不能纯白。舂簸筛拣是'惟精'的功夫，目的也不过是让米纯白而已。</b>博学、审问、慎思、明辨、笃行——都是'惟精'的功夫，用来求'惟一'。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 宁静存心（本课核心）</div>
+  <div class="original">
+    <p class="q">问："宁静存心时，可为'未发之中'否？"</p>
+    <p>先生曰："今人存心，只定得气。当其宁静时，亦只是<b>气宁静</b>，不可以为'未发之中'。"</p>
+    <p class="q">曰："未便是中，莫亦是求中功夫？"</p>
+    <p>曰："<b>只要去人欲、存天理，方是功夫。</b>静时念念去人欲、存天理，动时念念去人欲、存天理，<b>不管宁静不宁静</b>。若靠那宁静，不惟渐有喜静厌动之弊，中间许多病痛只是潜伏在，终不能绝去，遇事依旧滋长。<b>以循理为主，何尝不宁静？以宁静为主，未必能循理。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"在宁静中存养心性，可以算是'未发之中'（《中庸》说的中道）吗？"</p>
+    <p><span class="speaker">阳明答：</span>"现在的人存养心性，只是把气定住了。他宁静的时候，也只是<b>气宁静</b>，不能算'未发之中'。"</p>
+    <p><span class="speaker">陆澄问：</span>"那还没达到中，莫不也是求中的功夫？"</p>
+    <p><span class="speaker">阳明答：</span>"<b>只有去人欲、存天理，才是功夫。</b>静时念念不忘去人欲、存天理，动时也念念不忘去人欲、存天理——<b>别管宁不宁静</b>。如果依靠宁静，不但会渐渐有喜静厌动的毛病，而且心里许多病根只是潜伏着，终究除不掉，一遇事依旧长出来。<b>以天理为主，何尝不宁静？以宁静为主，却未必能合天理。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 为什么"追求宁静"是陷阱</div>
+  <div class="bg-card">
+    <p><b>这是阳明对"静坐修行"最尖锐的批评。</b>陆澄问的是：我静坐时心很静，这算开悟了吗？阳明说：不算——你那只是<b>气定住了</b>（身体和情绪安静下来），心里的病根一点没动。</p>
+    <p><b>关键的一句：</b><b>"以循理为主，何尝不宁静？以宁静为主，未必能循理。"</b>——你把"宁静"当目标去追，未必能合天理；你把"合天理"当目标，宁静反而自然来。<b>方向反了，越修越偏。</b></p>
+    <p><b>为什么"喜静厌动"是病？</b>因为你会开始躲避事情——一遇事心就乱，于是逃回静坐里，越坐越怕事。<b>这正是今天很多人的状态：追求"内心平静"本身，反而越来越不敢面对现实。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 洗米的两种人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>两个人洗米。第一个人把米泡在水里，看着水慢慢变清，心里很安宁——他觉得这就叫"米洗干净了"。可米上的糠皮、砂粒，全沉在底下，一粒没少。</p>
+    <p>第二个人不图安宁——他一遍遍舂、簸、筛、拣。水浑了又清、清了又浑，一点也不"静"。但最后，他碗里的米，是真的纯白。</p>
+    <p>阳明要的是第二种：<b>不是把水静下来，是把糠皮真去掉。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 给普通人的用法</div>
+  <div class="bg-card">
+    <p><b>现代版"宁静陷阱"：</b></p>
+    <p>· 用冥想、音乐、刷短视频让自己"心静下来"——静了一小时，一上班还是炸</p>
+    <p>· 觉得"等我心态好了，一切就好了"——心态成了逃避行动的借口</p>
+    <p>· 追求"不生气、不焦虑"的状态本身——可愤怒底下那个真正的问题，一点没解决</p>
+    <p><b>阳明的方案：</b>不追宁静，做"舂米"的功夫——<b>去人欲、存天理</b>。具体到日常：</p>
+    <p>· 发现自己嫉妒别人 → 那点嫉妒本身就是"糠皮"，看清它、去掉它（不是压下去）</p>
+    <p>· 发现自己贪图安逸 → 就在这件事上逼自己一把</p>
+    <p>· <b>不管当时心里安不安宁，该做的功夫照做</b>——做着做着，宁静自己就来了</p>
+    <p><b>一句话：</b>真正的宁静是"果"，不是"因"。你去追它，它跑；你去做该做的事，它来。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>只要去人欲、存天理，方是功夫。静时念念去人欲、存天理，动时念念去人欲、存天理，不管宁静不宁静。</b><br>
+    <b>以循理为主，何尝不宁静？以宁静为主，未必能循理。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="warn">
+    <b>这一课可能颠覆你的直觉：</b>我们习惯把"内心平静"当成修行目标——阳明说，那是把结果当成了目标。<br>
+    <b>真正的功夫是"舂米"：把心里的糠皮一粒粒拣掉。</b>过程绝不宁静，但最后碗里的米是真的白。
+  </div>
+  <div class="tip">
+    <b>今天可以试的：</b>当你下一次想"让我静一静"的时候，先问一句——<b>我是真的需要休息，还是在躲那件该做的事？</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 011 · 014 · 宁静的陷阱</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
