@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 019 课 · 种树的功夫 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .original b, .translation b { color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 019 课</div>
+  <h1>种树的功夫</h1>
+  <div class="sub">《传习录》陆澄录 · 第十五、十六条</div>
+  <div>
+    <span class="tag">无意必</span>
+    <span class="tag">为学须有本原</span>
+    <span class="tag">盈科而进</span>
+    <span class="tag">勿作枝叶花果想</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 无意必（孔门言志）</div>
+  <div class="original">
+    <p class="q">问："孔门言志，由、求任政事，公西赤任礼乐，多少实用。及曾晳说来，却似耍的事，圣人却许他，是意何如？"</p>
+    <p>曰："三子是有<b>意必</b>。有意必便偏着一边，能此未必能彼；曾点这意思却无意必，便是'<b>素其位而行，不愿乎其外</b>。素夷狄行乎夷狄，素患难行乎患难，无入而不自得'矣。三子所谓'汝器也'，曾点便有不器意。然三子之才各卓然成章，非若世之空言无实者，故夫子亦皆许之。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"孔子门下谈志向，子路、冉有想做政事，公西赤想做礼乐——都挺实用。轮到曾点，说的却像是玩耍的事（暮春时带一群人去沂水边沐浴、吹风、唱歌回家），孔子反而赞许他，这是什么意思？"</p>
+    <p><span class="speaker">阳明答：</span>"子路他们三个有'<b>意必</b>'（主观臆断 + 绝对化）。一有意必，人就偏在一边，能做这件事，未必能做那件事。曾点这个意思没有意必——就是'<b>安于现在的位置，做该做的事，不惦记本分之外的</b>。处在什么境地，就在那境地做该做的事，到哪里都安然自得'。那三位算是'<b>器</b>'（各有专门用途的人才），曾点则有不器的意思（不受限的通才）。不过那三位的才华也各自卓然成章，不像世上空谈无实的人，所以孔子也都赞许他们。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 为学须有本原（种树之喻）</div>
+  <div class="original">
+    <p class="q">问："知识不长进，如何？"</p>
+    <p>先生曰："为学须有<b>本原</b>，须从本原上用力，渐渐'<b>盈科而进</b>'。仙家说婴儿，亦善譬。婴儿在母腹时，只是纯气，有何知识？出胎后方始能啼，既而后能笑，又既而后能识认其父母兄弟，又既而后能立、能行、能持、能负，卒乃天下之事无不可能。皆是精气日足，则筋力日强，聪明日开，不是出胎日便讲求推寻得来，故须有个本原。"</p>
+    <p>又曰："<b>立志用功，如种树然。</b>方其根芽，犹未有干；及其有干，尚未有枝。枝而后叶，叶而后花、实。<b>初种根时，只管栽培灌溉，勿作枝想，勿作叶想，勿作花想，勿作实想。悬想何益？但不忘栽培之功，怕没有枝叶花实？</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"知识不长进，怎么办？"</p>
+    <p><span class="speaker">阳明答：</span>"做学问必须有个<b>本原</b>，要从本原上用功，渐渐'盈科而进'（像水灌满一个坑再往前流）。道家讲婴儿，也是个好比喻：婴儿在母胎里只是一团气，有什么知识？出生后才会哭，然后会笑，然后认得父母兄弟，然后能站、能走、能拿、能背——最后天下的事没有不能做的。<b>都是精气一天天充足、筋骨一天天强健、聪明一天天开发——不是出生那天就推究出来的。</b>所以必须有个本原。"</p>
+    <p><span class="speaker">阳明又说：</span>"<b>立志用功，就像种树。</b>刚生根发芽时还没有树干，有了树干还没有枝条，有枝才有叶，有叶才有花和果。<b>刚种下根的时候，只管栽培灌溉，不要去想着枝、想着叶、想着花、想着果。空想有什么用？只要不忘了栽培的功夫，还怕没有枝、叶、花、果吗？</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 这两条为什么放在一起</div>
+  <div class="bg-card">
+    <p><b>第十五条讲"不要执着于结果"，第十六条讲"该把力气花在哪"——一个说方向，一个说方法。</b></p>
+    <p><b>"意必"出自《论语》"子绝四：毋意，毋必，毋固，毋我"</b>——不主观臆断、不绝对化、不固执、不自我中心。阳明用这四个字解释孔子为什么赞许曾点：子路他们志向很"实用"，但那是"我一定要做成某件事"——一有"必"，人就窄了。</p>
+    <p><b>"盈科而进"出自《孟子》</b>——原话是"原泉混混，不舍昼夜，盈科而后进"。有源头的泉水，日夜不停，灌满一个坑再往前流，最后汇入大海。<b>功夫是有本原的，所以能持续；没本原的，热闹一阵就干了。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 种树人的三种念头</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>三个人各种一棵树。</p>
+    <p>第一个人天天挖开土看："根长了没有？怎么还不结果？"——树死了。</p>
+    <p>第二个人天天琢磨："我要让这棵树结出最大的果子，好让别人都羡慕。"——他把注意力全放在果子上，忘了浇水，树也死了。</p>
+    <p>第三个人只做一件事：<b>浇水、松土、晒太阳。</b>他不问"什么时候结果"，也不盘算"果子能卖多少钱"。三年后，树自己开花结果了。</p>
+    <p>阳明说：<b>"悬想何益？但不忘栽培之功，怕没有枝叶花实？"</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 给普通人的用法</div>
+  <div class="bg-card">
+    <p><b>"意必"的日常样子：</b></p>
+    <p>· "我一定要在 30 岁前做到××"——一有"必"，路窄了，做不成别的</p>
+    <p>· "学这个必须马上能变现，不然白学"——注意力全在果子上</p>
+    <p>· "我就是要证明给某人看"——那是"意"（自己的臆想），不是本心</p>
+    <p><b>"本原"是什么？</b>就是那件你<b>真心想做、且愿意长期做</b>的事。有本原的人，像有源头的泉水——遇到坎（科）就积满再往前，不会因为一时没结果就干涸。</p>
+    <p><b>最实用的一句：</b>"勿作枝想，勿作叶想，勿作花想，勿作实想。"——<b>不是不要结果，是别把心思挂在结果上。</b>心思挂在结果上，就乱了；心思放在栽培上，结果自己会来。</p>
+    <p><b>对照你自己：</b>学 Python、学 AI，如果每天想的是"什么时候能靠这个挣钱"，那就是在作"花想、实想"；如果每天做的是"今天这一课弄懂了吗、这个代码我动手敲了吗"——那就是在栽培灌溉。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>立志用功，如种树然……初种根时，只管栽培灌溉，勿作枝想，勿作叶想，勿作花想，勿作实想。悬想何益？但不忘栽培之功，怕没有枝叶花实？</b><br>
+    <b>素其位而行，不愿乎其外……无入而不自得。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最实用的启示：</b><br>
+    ① <b>别急着要结果</b>——不是不要，是别在根还没长好时天天扒土看。<br>
+    ② <b>焦虑往往是因为"悬想"</b>——脑子在算"什么时候能成"，手却没在浇水。治病的方法很简单：<b>把注意力从"结果"挪回"今天这一件事"。</b><br>
+    ③ <b>本原 = 真心想做 + 愿意长期做</b>。有它，功夫就断不了；没有它，靠意志力硬撑，撑不长。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 015-016 · 种树的功夫</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
