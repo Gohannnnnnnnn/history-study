@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 020 课 · 读书为何读不明白 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.45rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .original b, .translation b { color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 020 课</div>
+  <h1>读书为何读不明白</h1>
+  <div class="sub">《传习录》陆澄录 · 第十七、十八条</div>
+  <div>
+    <span class="tag">于心体上用功</span>
+    <span class="tag">反在自心上体当</span>
+    <span class="tag">心外无理</span>
+    <span class="tag">为学头脑</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 看书不能明</div>
+  <div class="original">
+    <p class="q">问："看书不能明，如何？"</p>
+    <p>先生曰："此只是在<b>文义上穿求</b>，故不明。如此，又不如为旧时学问。他到看得多，解得去。只是他为学虽极解得明晓，亦终身无得。<b>须于心体上用功。凡明不得，行不去，须反在自心上体当，即可通。</b>盖'四书''五经'不过说这心体，<b>这心体即所谓道，心体明即是道明</b>，更无二：此是为学<b>头脑</b>处。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"读书读不明白，怎么办？"</p>
+    <p><span class="speaker">阳明答：</span>"那是因为你只在<b>文字义理上抠</b>，所以不明白。这样反倒不如去搞旧的（程朱）学问——他们看得多、解得通。但他们虽然解得极明白，一辈子还是无所得。<b>必须在心体上用功。凡是读不明白、做不通的地方，就要反过来在自己心里去体认，就能通了。</b>因为'四书''五经'讲的不过就是这个心体——<b>这心体就是道，心体明了就是道明了</b>，没有两件事：这是做学问的<b>头脑</b>（关键）所在。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 心外无理</div>
+  <div class="original">
+    <p>"<b>虚灵不昧，众理具而万事出。心外无理，心外无事。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"心空灵明净而不昏昧，众多道理都具备于心中，万事万物由此显现。<b>心之外没有理，心之外也没有事。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 这两条接上了什么</div>
+  <div class="bg-card">
+    <p><b>第十八条是阳明学的核心命题之一</b>——"心外无理，心外无事"。这句话常被误会成"唯心主义"或"不用管外面的事"，其实是：<b>任何"理"都要被人心认识才有意义；任何事情都要人去做才成为"事"。</b></p>
+    <p><b>第十七条就是它在读书上的应用</b>——既然理不在书里，在心里，那读书读不明白，问题就不在书上，在你心里。你只是在文字表面上抠（"文义上穿求"），没有把它对照自己的心去体认。</p>
+    <p><b>"头脑"是阳明常用的词</b>——指提领一切的关键（就像衣服的领子，一提整件衣服就顺了）。为学的头脑就是心体：抓住它，其他都通。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两种读书人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>两个人读同一本医书，读到"悲则气消"。</p>
+    <p>第一个人把这句话抄了三遍，查了"悲"字的古义，做了详细的笔记，还背下了注疏——他能解释得清清楚楚，但他没有一次在自己伤心的夜里，去体会过那个"气消"的感觉。</p>
+    <p>第二个人读到这句，停下来，想起自己送走一位病人后整个下午的空落——他点了点头，接着读下一句。</p>
+    <p>多年后，第一个人还在做笔记。第二个人已经能看病了。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 给普通人的用法</div>
+  <div class="bg-card">
+    <p><b>为什么"读了很多书却不会用"？</b>因为读的时候只用眼睛和脑子（文义层面），没用自己（心体层面）。知识停在纸上，没跟你的经验接上。</p>
+    <p><b>阳明的解法（三步）：</b></p>
+    <p>① <b>读到不明白的地方 → 别急着找更多解释</b>（那还是在纸上打转）</p>
+    <p>② <b>回到自己身上体认</b>——"我有没有类似的经历？我当时是怎么想的？这句话说的对不对？"</p>
+    <p>③ <b>去做</b>——"行不去，须反在自心上体当"。做不通的地方，往往不是方法问题，是你心里有个结没看见。</p>
+    <p><b>对学 Python / AI 的用法（很直接）：</b>看十遍教程不如敲一遍代码。看懂了但写不出来，不是"我笨"，是"懂"还停留在文义上——<b>写不出来的那一刻，才是你真正该停下来体认的地方。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>须于心体上用功。凡明不得，行不去，须反在自心上体当，即可通。</b><br>
+    <b>心外无理，心外无事。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最实用的启示：</b><br>
+    ① <b>读不懂的时候，别只顾着往书上使劲</b>——回到自己身上去体认，往往一下就通了。<br>
+    ② <b>"懂了但做不到"是真的没懂</b>——阳明说"行不去"，就是懂还没到心体上。<br>
+    ③ <b>真懂的那一瞬间，通常不在书上，在你做那件事的时候。</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 017-018 · 读书为何读不明白</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
