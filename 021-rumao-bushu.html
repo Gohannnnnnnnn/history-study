@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 021 课 · 如猫捕鼠 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 021 课</div>
+  <h1>如猫捕鼠</h1>
+  <div class="sub">《传习录》陆澄录 · 第二十二、二十五条</div>
+  <div>
+    <span class="tag">省察克治</span>
+    <span class="tag">存养</span>
+    <span class="tag">拔去病根</span>
+    <span class="tag">斩钉截铁</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 省察与存养</div>
+  <div class="original">
+    <p>"<b>省察是有事时存养，存养是无事时省察。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"反省体察，就是有事时的存心养性；存心养性，就是无事时的反省体察。"——<b>两件事其实是一件事，只是有时有事、有时没事，叫法不同。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 省察克治（如猫捕鼠）</div>
+  <div class="original">
+    <p>一日，论为学工夫。</p>
+    <p>先生曰："教人为学，不可执一偏。初学时<b>心猿意马</b>，拴缚不定，其所思虑，多是人欲一边，故且教之静坐，息思虑。久之，俟其心意稍定。只悬空静守，如<b>槁木死灰</b>，亦无用，须教他<b>省察克治</b>。</p>
+    <p>"省察克治之功，则<b>无时而可间</b>，如去盗贼，须有个扫除廓清之意。<b>无事时，将好色、好货、好名等私欲逐一追究搜寻出来，定要拔去病根，永不复起，方始为快。</b></p>
+    <p>"<b>常如猫之捕鼠，一眼看着，一耳听着，才有一念萌动，即与克去，斩钉截铁，不可姑容，与他方便，不可窝藏，不可放他出路，方是真实用功，方能扫除廓清。</b>到得无私可克，自有端拱时在。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"教人做学问，不能偏执一端。初学时<b>心猿意马</b>拴不住，想的多是私欲那一头——所以先教他静坐，把思虑停下来。久了、心意稍定，若只是悬空守着，像<b>槁木死灰</b>一样，也没用——必须教他<b>省察克治</b>。</p>
+    <p>"省察克治的功夫，一刻都不能间断，就像剿除盗贼，必须有个扫除干净的决心。<b>无事的时候，把好色、好货、好名这些私欲，一条条搜寻出来，一定要拔掉病根、永不再起，才算痛快。</b></p>
+    <p>"<b>要常像猫捉老鼠：眼睛盯着、耳朵听着，念头刚一冒头，立刻克掉，斩钉截铁——不能姑息、不能迁就、不能窝藏、不能给它留出路。这才是真实用功，才能扫除干净。</b>到了没有私欲可克的地步，自然有从容安坐的时候。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 为什么用"猫捕鼠"这个比喻</div>
+  <div class="bg-card">
+    <p><b>"猫之捕鼠"原本是禅门话头</b>（宋代黄龙禅师教弟子的话）：猫捕鼠时"四足据地，目睛不瞬，心无他念"——全身心只盯着那一只老鼠，动则必中。</p>
+    <p><b>阳明借它讲什么？</b>讲"克己"的力度。多数人对付自己的毛病是这样：发现了→"嗯，我知道了"→过两天又犯。这叫"姑容"（姑息迁就）。阳明要的是<b>盯着它、等它冒头、一把摁死</b>。</p>
+    <p><b>注意"不可放他出路"这句</b>——不给自己的私欲找台阶下。人最爱干的事就是给自己的毛病找理由（"我这也是没办法""就这一次"）——那就是给它出路。</p>
+    <p><b>还有一句容易被忽略的：</b>"到得无私可克，自有端拱时在"——功夫做到没有私欲可克，自然就从容了。<b>从容不是修来的，是克干净后剩下的。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个捉老鼠的人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>家里进了老鼠，两个人都发现了。</p>
+    <p>第一个人说："有老鼠，我知道。"他买了个捕鼠笼放在墙边，然后去忙别的了。老鼠在笼边转了两圈，绕开走了——笼子里只有一块干掉的奶酪。</p>
+    <p>第二个人不买笼子。他掐灭灯，蹲在墙角，屏住呼吸等着。三个小时后老鼠出来了——他一把摁住。</p>
+    <p>阳明说：<b>"才有一念萌动，即与克去，斩钉截铁。"</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 具体怎么"捕鼠"</div>
+  <div class="steps">
+    <div class="st"><b>第一步 · 无事时搜寻</b>（对应"无事时逐一追究搜寻出来"）——静下来的时候，把最近反复出现的毛病列出来：爱刷手机？爱抱怨？爱比较？爱拖延？<b>不评价，先看见。</b></div>
+    <div class="st"><b>第二步 · 认出它的面孔</b>——同一个毛病往往换马甲出现。比如"好名"可能是想炫耀，也可能是怕被小看；"好货"可能是贪便宜，也可能是怕吃亏。</div>
+    <div class="st"><b>第三步 · 等它冒头的那一秒</b>——就是念头刚起、还没行动的那个瞬间（想打断别人说话的冲动、想点开短视频的手）。<b>这一秒是唯一的战场。</b></div>
+    <div class="st"><b>第四步 · 斩钉截铁，不给台阶</b>——不在这一秒找理由（"就这一次""我也是没办法"）。<b>"不可放他出路"——这是这一课最狠的一句。</b></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>省察克治之功，则无时而可间……无事时，将好色、好货、好名等私欲逐一追究搜寻出来，定要拔去病根，永不复起，方始为快。</b><br>
+    <b>常如猫之捕鼠……才有一念萌动，即与克去，斩钉截铁，不可姑容，与他方便，不可窝藏，不可放他出路。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最实用的一条：</b>对付自己的毛病，从"知道"到"做到"，差的就是那个<b>"斩钉截铁"的瞬间</b>。<br>
+    大多数人不是不知道该改，是<b>试它冒头的那一秒，给自己留了台阶</b>——而阳明说：不给。<br>
+    <b>今天可以试一次：</b>当你又伸手去点开那个不该点的东西时，停半秒——就看那半秒里你会不会给自己找理由。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 022 · 025 · 如猫捕鼠</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
