@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 022 课 · 心自迷耳 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .ghost-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0; }
+  .ghost { background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:0.88rem; }
+  .ghost b { color:var(--red); }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 022 课</div>
+  <h1>心自迷耳</h1>
+  <div class="sub">《传习录》陆澄录 · 第二十六、二十七条</div>
+  <div>
+    <span class="tag">怕鬼</span>
+    <span class="tag">集义</span>
+    <span class="tag">心有所慊</span>
+    <span class="tag">四鬼</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 有人夜怕鬼，奈何</div>
+  <div class="original">
+    <p class="q">澄问："有人夜怕鬼者，奈何？"</p>
+    <p>先生曰："只是平日<b>不能集义</b>，而<b>心有所慊</b>，故怕。若素行合于神明，何怕之有？"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 非鬼迷也，心自迷耳</div>
+  <div class="original">
+    <p>子莘曰："正直之鬼，不须怕，恐邪鬼不管人善恶，故未免怕。"</p>
+    <p>先生曰："岂有邪鬼能迷正人乎？只此一怕，即是<b>心邪</b>，故有迷之者，<b>非鬼迷也，心自迷耳</b>。如人好色，即是<b>色鬼迷</b>；好货，即是<b>货鬼迷</b>；怒所不当怒，是<b>怒鬼迷</b>；惧所不当惧，是<b>惧鬼迷</b>也。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p><span class="speaker">陆澄问：</span>"有人晚上怕鬼，怎么办？"</p>
+    <p><span class="speaker">阳明说：</span>"只是平日里做不到<b>集义</b>（事事合于道义），心里便<b>有所疑惑不安</b>，所以怕。如果平素行为与神明相合，又有什么可害怕的？"</p>
+    <p><span class="speaker">马子莘说：</span>"正直的鬼不必怕，怕的是邪恶的鬼不管人善恶，所以难免害怕。"</p>
+    <p><span class="speaker">阳明说：</span>"哪有邪鬼能迷惑正直的人？<b>你有这一怕，本身就是心地不正了。</b>所以有被迷惑的——<b>不是鬼迷了他，是他的心迷了自己。</b>比如人好色，就是被色鬼迷；贪财，就是被财鬼迷；不该生气而生气，就是被怒鬼迷；不该怕而怕，就是被惧鬼迷。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 两个词要先弄懂</div>
+  <div class="bg-card">
+    <p><b>① 集义</b>——出自《孟子·公孙丑上》："其为气也……是<b>集义所生者，非义袭而取之也</b>。"朱熹注：<b>"集义，犹言积善，盖欲事事皆合于义也。"</b></p>
+    <p>注意"集义"和"义袭"的对照：<b>集义</b>是一件一件小事积累起来的道义（日常化）；<b>义袭</b>是偶尔做一件漂亮事来装点自己（表演性的）。阳明讲的是前者。</p>
+    <p><b>② 慊（xián）</b>——疑惑、不安、亏欠感。不是"害怕"本身，是<b>心里那点自己知道不对的地方</b>。</p>
+    <p><b>③ 说话的人</b>：马子莘即马明衡，正德十二年进士，阳明早期学生。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 阳明其实没有跟你争"有没有鬼"</div>
+  <div class="steps">
+    <div class="st"><b>第一步 · 他绕开了"鬼存在吗"这个问题</b>——他不去证实或否证鬼的存在，而是问：<b>你"怕"这件事，本身说明了什么？</b></div>
+    <div class="st"><b>第二步 · 他给出诊断：怕 = 心有所慊</b>——"平日不能集义"，所以心里有一处亏欠或疑惑。那个"慊"才是怕的根。<b>不是你怕鬼，是你心里有件事没安顿好。</b></div>
+    <div class="st"><b>第三步 · 他把"鬼"请到心里来</b>——"非鬼迷也，心自迷耳"。马子莘想区分"正直鬼"和"邪鬼"，阳明说：<b>不用分，只要你有这一怕，就已经是心地不正了。</b></div>
+    <div class="st"><b>第四步 · 他给出四种"鬼"的真实名字</b>——色鬼、货鬼、怒鬼、惧鬼。<b>这四种"鬼"没有一个是外面来的</b>，全是自己心里没克掉的私欲，披了件"鬼"的衣服。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">四种"鬼"，其实都是自己</div>
+  <div class="ghost-grid">
+    <div class="ghost"><b>色鬼迷</b><br>停不下来的那个刷<br><span style="color:var(--ink-soft);font-size:0.82rem">"我控制不住"</span></div>
+    <div class="ghost"><b>货鬼迷</b><br>"最后三天"就下单<br><span style="color:var(--ink-soft);font-size:0.82rem">"不买就亏了"</span></div>
+    <div class="ghost"><b>怒鬼迷</b><br>一点小事就炸<br><span style="color:var(--ink-soft);font-size:0.82rem">"都是他的错"</span></div>
+    <div class="ghost"><b>惧鬼迷</b><br>明明没事却睡不着<br><span style="color:var(--ink-soft);font-size:0.82rem">"万一……怎么办"</span></div>
+  </div>
+  <div class="bg-card" style="margin-top:10px">
+    <p>阳明这段话最狠的地方是：<b>他不承认你有"外部敌人"。</b>你以为在跟鬼斗、跟别人斗、跟环境斗——其实每一场都是<b>跟自己心里那点没克掉的私欲</b>在斗。</p>
+    <p>这和上一课（<b>如猫捕鼠</b>）是同一件事的两面：那边讲"怎么克"，这边讲<b>"你要克的那个东西，长什么样"</b>——它常披着"外面的威胁"这件衣服出现。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 四个人的四种鬼</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>村里四个人都说自己"撞了鬼"。</p>
+    <p><b>第一个人</b>：每天夜里刷手机到三点，白天困得睁不开眼。他说："我被鬼缠住了，管不住手。"</p>
+    <p><b>第二个人</b>：家里堆着十几瓶没开封的洗发水、五双同款鞋。他说："促销太凶，鬼在勾我。"</p>
+    <p><b>第三个人</b>：在会上被同事一句话说急了，回家摔了杯子。他说："那人身上有邪气，把我激着了。"</p>
+    <p><b>第四个人</b>：什么事都没有，却常常半夜惊醒，一身汗。他说："肯定有鬼跟着我。"</p>
+    <p>阳明说：<b>"非鬼迷也，心自迷耳。"</b>——你们四个遇见的从来不是同一只鬼，也不在任何一条巷子里。<b>四只鬼，都在你们各自心里住着。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 现代人的"鬼"叫什么</div>
+  <div class="bg-card">
+    <p>我们早已不怕夜路了，也不怕鬼。但"怕"换了名字：<b>怕被否定、怕失业、怕同龄人超过自己、怕父母生病、怕孩子落后、怕体检报告、怕"我这一辈子就这样了"。</b></p>
+    <p>阳明的问法仍然有效：<b>你怕的那个东西，有多少在外面，有多少在你心里那个"慊"上？</b></p>
+    <p>具体说——如果你怕的是"被否定"，那多半不是别人真的在否定你，而是<b>你自己心里有没做扎实的事</b>；如果你怕的是"被别人超过"，那多半不是别人跑得快，而是<b>你自己的功夫这几天松了</b>。</p>
+    <p style="color:var(--ink-soft)">（这也解释了一件事：为什么有些人，你说什么他都怕；有些人，天塌下来他也稳。<b>差别不在外面的鬼，在里面有没有"慊"。</b>）</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>只是平日不能集义，而心有所慊，故怕。若素行合于神明，何怕之有？</b><br><br>
+    <b>岂有邪鬼能迷正人乎？只此一怕，即是心邪，故有迷之者，非鬼迷也，心自迷耳。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最有用的一条：</b>下次你感到"怕"的时候，别急着找外面的原因——先问一句：<b>我心里是不是有一处"慊"？</b>（有一件事，我知道我该做却没做；有一个坑，我知道它在却没填。）<br>
+    把那一处补上，"怕"往往自己就小了。<b>这不是心理安慰，是阳明说的"集义"——一件一件小事合于道义，心里自然就实了。</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 026 · 027 · 心自迷耳</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
