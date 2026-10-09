@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 025 课 · 志到熟处 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 025 课</div>
+  <h1>志到熟处</h1>
+  <div class="sub">《传习录》陆澄录 · 第三十七、三十八条</div>
+  <div>
+    <span class="tag">执中</span>
+    <span class="tag">随时变易</span>
+    <span class="tag">立志</span>
+    <span class="tag">从心所欲</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 别预先立定一个格式</div>
+  <div class="original">
+    <p class="q">问孟子言"执中无权犹执一"。</p>
+    <p>先生曰："<b>中只是天理，只是易。</b>随时变易，如何执得？须是<b>因时制宜</b>，难预先定一个规矩在。如后世儒者要将道理一一说得无罅漏，<b>立定个格式，此正是执一</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（执中无权）</div>
+  <div class="translation">
+    <p><b>有人问《孟子》"持守中道而不懂权变，还是执着在一点上"该怎么理解。</b></p>
+    <p><span class="speaker">阳明说：</span>"<b>中道就是天理，就是"变易"。</b>它随着时势变动，你怎么能死守得住？必须<b>因时制宜</b>——事先定死一套规矩是很难的。后世的儒者偏要把道理一条条讲得滴水不漏、<b>立定一个格式，这正是"执一"（死守一端）。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 立志是长立此善念</div>
+  <div class="original">
+    <p class="q">唐诩问："立志是常存个善念，要为善去恶否？"</p>
+    <p>曰："<b>善念存时，即是天理。此念即善，更思何善？此念非恶，更去何恶？</b>此念如树之根芽。<b>立志者，长立此善念而已。</b>'从心所欲，不逾矩'，只是<b>志到熟处</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（立志）</div>
+  <div class="translation">
+    <p><b>唐诩问：</b>"立志，是不是就是常存一个善念、要做善事去恶念？"</p>
+    <p><span class="speaker">阳明说：</span>"<b>善念存着的时候，它本身就是天理。这个念头已经是善的，还去想什么善？这个念头既然不是恶，还去去掉什么恶？</b></p>
+    <p>"这个念头就像树的根和芽。<b>所谓立志，不过是长久地立住这个善念而已。</b>孔子说的'从心所欲，不逾矩'——那只是<b>志真正纯熟了</b>的样子。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">一句话抓住它</div>
+  <div class="hl">立志不是画一张完美路线图，<br>是天天立住心里那个念头。</div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 三个出处</div>
+  <div class="bg-card">
+    <p><b>① 执中无权犹执一</b>——出自《孟子·尽心上》：子莫这个人"持守中道"，孟子说这已经接近正确了，但"<b>执中无权，犹执一也</b>"——死守中道而不懂变通，还是执着在一点上。孟子讨厌"执一"的原因是它"<b>举一而废百</b>"（抓住一点，废掉其余一切）。</p>
+    <p><b>② 从心所欲，不逾矩</b>——出自《论语·为政》：孔子说自己"七十而从心所欲，不逾矩"（随心行事而不越出规矩）。注意：这是<b>七十岁</b>的境界，不是起步的要求。</p>
+    <p><b>③ 易</b>——就是《周易》的"易"：变易。阳明说"中只是天理，只是易"，意思是<b>道不是一块死板的规定，它是活的。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 这两条其实是一体两面</div>
+  <div class="steps">
+    <div class="st"><b>第三十七条在破"死守格式"</b>——很多人的毛病是把"道"理解成一套固定流程：应该这样、应该那样。阳明说：<b>天理随时变易，你怎么守得住？</b>该做的是因时制宜。</div>
+    <div class="st"><b>第三十八条在立"守什么"</b>——那到底该守什么？<b>守那个善念。</b>不是守格式、守计划、守流程，是守心里那个"该做"的念头。</div>
+    <div class="st"><b>合起来的意思</b>：<b>守心不守式。</b>方向由良知定（活的原则），具体的走法随时调整（可变的形式）。这正是"执中"——中不是中间点，是"恰好"。</div>
+    <div class="st"><b>最后一层：为什么"从心所欲不逾矩"是"志到熟处"</b>——不是靠克制忍出来的，是<b>练到那个念头长在身上了</b>，怎么走都不会偏。就像开车熟练后，换挡不用想。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个要减肥的人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p><b>第一个人</b>：立了个大志。他打开表格，把未来十二周每一天吃多少克碳水、跑多少公里、体脂降到多少、每周几称重，全都排得清清楚楚。第三天出差，计划全乱。他觉得自己"意志力太差"，把表格关了，从此不再提减肥。</p>
+    <p><b>第二个人</b>：也下了决心。但他只守住一条——<b>"能少吃一口就少吃一口，能动就动一动。"</b>出差就适应出差的吃法，加班就适应加班的动法。半年后，他瘦了。</p>
+    <p>阳明说：<b>"须是因时制宜，难预先定一个规矩在。"</b>又说：<b>"立志者，长立此善念而已。"</b></p>
+    <p>两个人的差别不在意志强弱——<b>第一个守的是表格，第二个守的是那个念头。</b>表格一破就全崩，念头不会破。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 计划焦虑症</div>
+  <div class="bg-card">
+    <p>这一条几乎是给现代人写的。我们特别容易把"立志"变成"做计划"——然后计划一破，就判定自己失败，接着彻底放弃。<b>这是"执一"：把一个可变的东西当成了不变的东西。</b></p>
+    <p>阳明的做法是两条同时用：</p>
+    <p><b>① 守念头（不变）</b>：今天我该做的正事，做了没有？——这一条任何时候都成立。</p>
+    <p><b>② 换走法（可变）</b>：具体几点做、做多久、用什么工具——随时按情况调，调不算失败。</p>
+    <p style="color:var(--ink-soft)">（换句话说：<b>方向要偏执，路径要灵活。</b>大多数人做反了——方向一有风吹草动就改，路径却定死了不许动。）</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>中只是天理，只是易。随时变易，如何执得？须是因时制宜，难预先定一个规矩在。</b><br><br>
+    <b>善念存时，即是天理……此念如树之根芽。立志者，长立此善念而已。</b><br><br>
+    <b>"从心所欲，不逾矩"，只是志到熟处。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最有用的一条：</b>如果你最近因为"计划赶不上变化"而自责过——<b>请把这一课读三遍。</b><br>
+    你守的应该是<b>那个念头</b>（今天要做的那件正事），不是那张时间表。时间表是"易"，本来就是要变的；把它当成"必须遵守的规矩"，就是阳明说的"执一"。<br>
+    <b>另送一句：</b>"从心所欲不逾矩"不是天赋，是"熟处"——是练出来的。<b>你现在做不到不用想就对，很正常；那是七十岁的境界，不是起步的门槛。</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 037 · 038 · 志到熟处</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
