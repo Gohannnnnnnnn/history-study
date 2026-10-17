@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 027 课 · 走得一段，认得一段 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 027 课</div>
+  <h1>走得一段，认得一段</h1>
+  <div class="sub">《传习录》陆澄录 · 第四十九、五十条</div>
+  <div>
+    <span class="tag">地上尘</span>
+    <span class="tag">走得一段</span>
+    <span class="tag">有疑便问</span>
+    <span class="tag">只管闲讲</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 私欲如地上尘，一日不扫</div>
+  <div class="original">
+    <p>先生曰："诸公近见时少疑问，何也？<b>人不用功，莫不自以为已知</b>，为学只循而行之是矣。殊不知<b>私欲日生，如地上尘，一日不扫，便又有一层</b>。着实用功，便见道无终穷，愈探愈深，必使精白无一毫不彻方可。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（一）</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"诸位最近见面时疑问变少了，为什么？<b>人一旦不用功，就都以为自己已经懂了</b>，觉得做学问只要照着做就行。却不知道<b>私欲一天天生出来，就像地上的尘土，一天不扫，就又多一层。</b></p>
+    <p>"踏实用功，才能看见道没有尽头——<b>越探越深</b>，非要达到精细纯洁、没有一丝不透彻的地步才行。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 走得一段，方认得一段</div>
+  <div class="original">
+    <p class="q">问："知至然后可以言诚意。今天理、人欲知之未尽，如何用得克己工夫？"</p>
+    <p>先生曰："人若真实切己用功不已，则于此心天理之精微<b>日见一日</b>，私欲之细微亦<b>日见一日</b>。若不用克己工夫，终日只是说话而已，天理终不自见，私欲亦终不自见。</p>
+    <p>"<b>如人走路一般，走得一段，方认得一段；走到岐路处，有疑便问，问了又走，方渐能到得欲到之处。</b></p>
+    <p>"今人于<b>已知之天理不肯存，已知之人欲不肯去</b>，且只管愁不能尽知——<b>只管闲讲，何益之有？</b>且待克得自己无私可克，方愁不能尽知，亦未迟在。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（二）</div>
+  <div class="translation">
+    <p><b>陆澄问：</b>"要'致知'到家了才谈得上'诚意'吧？现在天理和私欲都还没弄明白，怎么做克己的功夫呢？"（意思是：<b>我得先全搞懂了，才好开始修吧？</b>）</p>
+    <p><span class="speaker">阳明说：</span>"人若真肯切实用功不停，那么心里天理的精细处会<b>一天比一天看得清</b>，私欲的细微处也会<b>一天比一天看得清</b>。若不下克己功夫，整天只是说空话，天理终究看不见，私欲也终究看不见。</p>
+    <p>"<b>就像人走路：走了一段，才认得这一段；走到岔路口，有疑问就问，问了再走——这样才能慢慢走到想去的地方。</b></p>
+    <p>"现在的人是：<b>已经知道的天理不肯存养，已经知道的私欲不肯去掉，却只管发愁'我还没全弄明白'——只管空谈，有什么用？</b>等你克到自己没有私欲可克了，再来愁'还没全明白'，也不迟。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">一句话抓住它</div>
+  <div class="hl">路不是看清了才走，<br>是走了才看清。</div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 这一课在拆掉一个致命的错觉</div>
+  <div class="steps">
+    <div class="st"><b>第一层 · 那个错觉叫"我得先全部想明白"</b>——陆澄问的正是这个："天理私欲我还没全懂，怎么开始修？"这句话听着特别合理，其实是<b>把顺序搞反了</b>。</div>
+    <div class="st"><b>第二层 · 阳明的回答：认识是在走的过程中长出来的</b>——"日见一日"不是等来的，是用功之后<b>自己浮现</b>的。你不走，永远看不清下一段路。</div>
+    <div class="st"><b>第三层 · "只管愁不能尽知"这句最狠</b>——阳明点破了一种人：<b>已知的不做，未知的瞎愁。</b>这不是好学，这是拿"我还没准备好"当挡箭牌。</div>
+    <div class="st"><b>第四层 · 前面的"地上尘"配套</b>——功夫是<b>日课</b>（天天扫），不是"一次性大扫除"。指望"哪天状态好了一口气解决"，本身就是错的期待。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 雾里的路</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>一条山路起了大雾，五步之外什么都看不见。</p>
+    <p><b>第一个人</b>站在起点，想等雾散了、看清整条路再走。他在原地等了很久。雾从来没散。</p>
+    <p><b>第二个人</b>也看不清。他往前迈了一步——看清了眼前的三步。再迈一步——又看清了三步。</p>
+    <p>走到半山腰时，第二个人回头，看见第一个人还站在山脚。<b>那一段路，第一个人永远没有"看清楚"的机会——因为看得清的地方，是靠走出来的。</b></p>
+    <p>阳明说：<b>"如人走路一般，走得一段，方认得一段。"</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 三种"不肯走"的样子</div>
+  <div class="bg-card">
+    <p><b>① 装备党</b>：想学一件事，先把工具、课程、书单、路线图全配齐——然后迟迟不开始。<b>收集本身成了不开始的理由。</b></p>
+    <p><b>② 完美主义者</b>：非要等到"我完全搞懂了"才动手做第一个东西。可第一个东西永远是糙的——<b>不做糙的第一个，就没有好的第二个。</b></p>
+    <p><b>③ 焦虑型观望</b>：天天担心"我这条路对不对""会不会白学"——<b>担心本身消耗的力气，比走错一段多得多。</b></p>
+    <p style="color:var(--ink-soft)">阳明给的解法就一句：<b>把"已知的"先做了。</b>你不需要知道整条路，只需要知道下一步。"有疑便问，问了又走。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>私欲日生，如地上尘，一日不扫，便又有一层。</b><br><br>
+    <b>如人走路一般，走得一段，方认得一段；走到岐路处，有疑便问，问了又走，方渐能到得欲到之处。</b><br><br>
+    <b>今人于已知之天理不肯存，已知之人欲不肯去，且只管愁不能尽知——只管闲讲，何益之有？</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最有用的一条：</b>把你现在"卡着不敢动"的那件事，<b>找出其中最小的、你确定能做的一步</b>——只做那一步。<br>
+    做完之后你会发现：<b>下一步自动就清楚了。</b>不是因为你变聪明了，是因为你走到了能看见它的位置。<br>
+    <b>另外：</b>"一日不扫，便又有一层"——反过来说，<b>每天扫一点就够了</b>。阳明要的不是一次大扫除，是每天那把扫帚。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 049 · 050 · 走得一段，认得一段</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
