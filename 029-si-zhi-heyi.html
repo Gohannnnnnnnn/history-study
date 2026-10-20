@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 029 课 · 思之何益 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0; }
+  .cmp > div { background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:0.87rem; }
+  .cmp .t1 { color:var(--red); font-weight:700; font-size:0.78rem; }
+  .cmp .t2 { color:var(--green); font-weight:700; font-size:0.78rem; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 029 课</div>
+  <h1>思之何益</h1>
+  <div class="sub">《传习录》陆澄录 · 第六十四、六十六条</div>
+  <div>
+    <span class="tag">常见在</span>
+    <span class="tag">过去未来</span>
+    <span class="tag">不动心</span>
+    <span class="tag">集义</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 过去未来事，思之何益</div>
+  <div class="original">
+    <p>先生曰："<b>只存得此心常见在，便是学。过去未来事，思之何益？徒放心耳！</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（一）</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"<b>只要让这颗心时时"在场"（常见在），这就是学。</b></p>
+    <p>"<b>过去的事、未来的事，想它有什么益处？只是把心放跑了而已！</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 硬把捉，还是集义</div>
+  <div class="original">
+    <p class="q">尚谦问孟子之"不动心"与告子异。</p>
+    <p>先生曰："<b>告子是硬把捉着此心，要他不动；孟子却是集义到自然不动。</b>"</p>
+    <p>又曰："<b>心之本体原自不动。</b>心之本体即是性，性即是理，性元不动，理元不动，<b>集义是复其心之本体</b>。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（二）</div>
+  <div class="translation">
+    <p><b>薛侃问：</b>孟子的"不动心"和告子的"不动心"有什么不同？</p>
+    <p><span class="speaker">阳明说：</span>"<b>告子是硬抓住这颗心，强迫它不动；孟子却是"集义"（事事合于道义）到自然不动。</b>"</p>
+    <p>又说："<b>心的本体本来就是不动的。</b>心之本体就是性，性就是天理——性本来不动，天理本来不动。<b>所谓"集义"，只是恢复它本来的样子。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">一句话抓住它</div>
+  <div class="hl">心不静，是因为它住在过去和未来；<br>心能定，是因为它在一件件具体的事上。</div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 两条合起来是一个完整的答案</div>
+  <div class="steps">
+    <div class="st"><b>第一层 · "学"的定义被改了</b>——阳明说"只存得此心常见在，便是学"。<b>学不是往脑子里装东西，是让心"在场"。</b>你在读书，但心在想着明天的事——那不算学，那叫心不在。</div>
+    <div class="st"><b>第二层 · 过去未来，想它没用</b>——"思之何益？徒放心耳"。这句极狠：<b>反复想过去（悔）和未来（忧），唯一的实际效果是把心放跑了，事情一件没变。</b></div>
+    <div class="st"><b>第三层 · 硬压不是不动</b>——告子"硬把捉着此心"，就是强行按住不动。这像什么？<b>像死死攥住一样东西，手反而抖。</b>阳明说这不是真不动，是僵住了。</div>
+    <div class="st"><b>第四层 · 真不动是"恢复"，不是"制造"</b>——"心之本体原自不动"、"集义是复其心之本体"。<b>不需要你造一个"平静"出来，只需要把遮蔽它的东西一件件去掉。</b>方法也不是打坐，是"集义"——把事一件件做对。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">两种"不动"，天差地别</div>
+  <div class="cmp">
+    <div><span class="t1">硬把捉（告子）</span><br>告诉自己"别紧张别紧张"<br>硬压住情绪不发作<br>用意志力死盯着</div>
+    <div><span class="t2">集义（孟子）</span><br>把该做的事一件件做完<br>平时积累到不需要忍<br>熟练之后自然不慌</div>
+  </div>
+  <div class="bg-card" style="margin-top:10px">
+    <p>差别在哪？<b>硬把捉耗的是意志力（有限的，会用完）；集义攒的是底气（越攒越厚）。</b></p>
+    <p>所以阳明说"集义是复其心之本体"——<b>你本来就不慌，是想法和习气让你慌；把那些拿掉，不慌自己就回来了。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个学骑车的人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p><b>第一个人</b>：上车前拼命告诉自己"别摔别摔""手要稳""绝对不能晃"。他死死攥住车把、全身僵直——结果车把一歪，摔了。第二次更紧张，攥得更死，摔得更狠。</p>
+    <p><b>第二个人</b>：也摔了两次。摔完他想的是"刚才为什么歪"——然后调整，再骑。摔到第五次，身体自己学会了平衡。后来他一只手扶把也能走。</p>
+    <p>阳明说：<b>"告子是硬把捉着此心，要他不动；孟子却是集义到自然不动。"</b></p>
+    <p><b>稳，不是攥出来的，是练出来的。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 反刍与硬撑</div>
+  <div class="bg-card">
+    <p><b>反刍（想过去）</b>：那句话说错了、那次机会没抓住、那件事处理得不好——你在脑子里重播第一百遍。<b>阳明说：思之何益？徒放心耳。</b>重播不会改变过去，只会占掉现在。</p>
+    <p><b>预演（想未来）</b>：万一考不过、万一被辞、万一病查出来不好——你在提前经历还没发生的事。<b>同样：徒放心耳。</b></p>
+    <p><b>硬撑（压情绪）</b>："我不能慌""我要冷静"——越压越紧，反而更容易崩。<b>这是告子的路。</b></p>
+    <p style="color:var(--ink-soft)">正确的路只有一条，而且很朴素：<b>回到手边这件具体的事上，把它做对。</b>这就是"集义"，也是"存得此心常见在"。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>只存得此心常见在，便是学。过去未来事，思之何益？徒放心耳！</b><br><br>
+    <b>告子是硬把捉着此心，要他不动；孟子却是集义到自然不动。</b><br><br>
+    <b>心之本体原自不动……集义是复其心之本体。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最有用的一条：</b>下次你发现自己又在反刍（重播过去）或预演（吓自己未来）时，<b>不要命令自己"别想了"</b>（那是硬把捉）。<br>
+    改成：<b>找一件手边能做的小事，做完它。</b>——擦个桌子、回一条消息、写三行字。<b>心一旦回到"正在做的事"上，反刍自动就断了。</b><br>
+    <b>这就是"常见在"：不是让心空着，是让它有地方待。</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 064 · 066 · 思之何益</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
