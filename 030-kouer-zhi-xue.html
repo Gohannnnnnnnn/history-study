@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 030 课 · 口耳之学 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 030 课</div>
+  <h1>口耳之学</h1>
+  <div class="sub">《传习录》陆澄录 · 第六十九、七十二条</div>
+  <div>
+    <span class="tag">口耳</span>
+    <span class="tag">义袭而取</span>
+    <span class="tag">有根才生</span>
+    <span class="tag">孝弟为仁之本</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · 讲天理时，心里已生出多少私欲</div>
+  <div class="original">
+    <p>先生曰："今为吾所谓'格物'之学者，尚多<b>流于口耳</b>。况为口耳之学者，能反于此乎？</p>
+    <p>"<b>天理人欲，其精微必时时用力省察克治，方日渐有见。如今一说话之间，虽只讲天理，不知心中倏忽之间，已有多少私欲。</b></p>
+    <p>"盖有窃发而不知者，虽用力察之，尚不易见，<b>况徒口讲而可得尽知乎？</b>今只管讲天理来顿放着不循，讲人欲来顿放着不去——岂'格物致知'之学？</p>
+    <p>"后世之学，其极至，只做得个'<b>义袭而取</b>'的工夫。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（一）</div>
+  <div class="translation">
+    <p><span class="speaker">阳明说：</span>"现在学我所说的'格物'的人，<b>大多还停留在口耳之间</b>（听说、讲说）。更何况那些专做"口耳之学"的人，能反过来在自己身上用功吗？</p>
+    <p>"<b>天理与人欲的细微处，必须时时用力省察克治，才能一天天看得清。可就在说一句话的工夫，虽然嘴里讲的是天理，不知道心里一瞬间已经生出多少私欲了。</b></p>
+    <p>"还有那些偷偷萌发、自己都察觉不到的——<b>即使用力省察，都还看不清；何况只靠嘴讲，能全知道吗？</b></p>
+    <p>"现在的人，讲天理却放着不照着做，讲私欲却放着不去掉——这怎么算'格物致知'的学问？<b>后世的学问做到极处，也不过是个'义袭而取'的功夫。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 有根才生</div>
+  <div class="original">
+    <p class="q">问："程子云'仁者以天地万物为一体'，何墨氏'兼爱'反不得谓之仁？"</p>
+    <p>先生曰："此亦甚难言，须是诸君<b>自体认出来</b>始得。<b>仁是造化生生不息之理</b>，虽弥漫周遍，无处不是，然其<b>流行发生，亦只有个渐</b>，所以生生不息。</p>
+    <p>"如冬至一阳生，必自一阳生，而后渐渐至于六阳，若无一阳之生，岂有六阳？</p>
+    <p>"<b>譬之木，其始抽芽，便是木之生意发端处；抽芽然后发干，发干然后生枝生叶，然后是生生不息。若无芽，何以有干，有枝叶？能抽芽，必是下面有个根在。有根方生，无根便死。无根何从抽芽？</b></p>
+    <p>"<b>父子兄弟之爱，便是人心生意发端处，如木之抽芽。</b>自此而仁民，而爱物，便是发干、生枝、生叶。<b>墨氏'兼爱'无差等</b>，将自家父子、兄弟与途人一般看，<b>便自没了发端处。不抽芽，便知得他无根，便不是生生不息，安得谓之仁？</b></p>
+    <p>"<b>孝弟为仁之本</b>——却是仁理从里面发生出来。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（二）</div>
+  <div class="translation">
+    <p><b>问：</b>程子说"仁者以天地万物为一体"，那为什么墨子的"兼爱"反而不算仁？</p>
+    <p><span class="speaker">阳明说：</span>"这个很难用话讲，<b>必须你们自己体认出来</b>才算数。<b>仁，是天地造化那生生不息的天理</b>——它虽然弥漫周遍、无处不在，但<b>它的发生流行是有次第的</b>，所以才能生生不息。</p>
+    <p>"<b>就像一棵树：起初抽芽，就是这棵树生意的发端；抽了芽才长干，长了干才生枝生叶，然后才生生不息。若没有芽，哪来的干、哪来的枝叶？而能抽芽，一定是下面有根在。有根才生，无根就死。没有根，从哪抽芽？</b></p>
+    <p>"<b>父子兄弟之间的爱，就是人心的生意发端处，就像树的抽芽。</b>从这里推广到爱民、爱物，就是长干、生枝、生叶。</p>
+    <p>"<b>墨子的'兼爱'讲无差等</b>，把自家父兄和路人一样看待——<b>这就自己把发端处弄没了。不抽芽，就知道它无根；无根就不是生生不息，怎么能叫仁？</b></p>
+    <p>"<b>'孝弟为仁之本'</b>——仁的道理，是从里面生发出来的。"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">一句话抓住它</div>
+  <div class="hl">讲得出来的是"口耳"，<br>生得出来的是"根"。</div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 两个概念</div>
+  <div class="bg-card">
+    <p><b>① 义袭而取</b>——出自《孟子》："是集义所生者，<b>非义袭而取之也</b>。"<b>集义</b>是一件件积累；<b>义袭</b>是偶尔做一件漂亮事来装点自己（像"偷袭"一样，偶然得手，不是真有功夫）。</p>
+    <p><b>② 墨氏兼爱</b>——墨子主张"兼相爱，交相利"，爱无差等（对所有人都一样爱）。孟子批评他"无父"。阳明这里从<b>生长次第</b>的角度批评：不是爱不该广，是<b>跳过了发端处</b>。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 两条其实在说同一件事</div>
+  <div class="steps">
+    <div class="st"><b>第一层 · "讲"和"做"是两件事</b>——第六十九条最锋利的一句：<b>"虽只讲天理，不知心中倏忽之间，已有多少私欲。"</b>你正说着"要看淡名利"，心里已经在意对方怎么看你——这一瞬间就露了。</div>
+    <div class="st"><b>第二层 · "义袭"是假功夫</b>——偶尔做对一次（心情好、有人看着），就以为自己成了。阳明说这是"袭"，不是"集"。<b>真功夫是天天长出来的，不是偶尔拿出来的。</b></div>
+    <div class="st"><b>第三层 · 树必须有根才生</b>——第七十二条的比喻极完整：芽、干、枝、叶，一环扣一环。<b>没有芽就没有干——你不能直接从"我要爱天下人"开始。</b></div>
+    <div class="st"><b>第四层 · 所以要从最近处起</b>——"父子兄弟之爱，便是人心生意发端处"。<b>仁的根，就在你对父母、兄弟、妻儿的那点真心上。</b>从这里长出去，才叫生生不息；跳过它去谈博爱，是无根。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个种树的人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>两个人都想要一片林子。</p>
+    <p><b>第一个人</b>：买了一大袋种子，撒在整片荒地上——撒得很均匀，看上去很壮观。他跟人说："明年这里就是森林。"第二年春天，地上什么也没长出来。</p>
+    <p><b>第二个人</b>：只在一小块地上育苗，浇水、遮阴，等它抽出芽。活了，再移栽；再育苗，再移栽。五年后，他的林子成了，还自己长出了新苗。</p>
+    <p>阳明说：<b>"能抽芽，必是下面有个根在。有根方生，无根便死。无根何从抽芽？"</b></p>
+    <p>第一个人撒的不是种子——<b>是愿望。愿望没有根。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 两种常见的"没根"</div>
+  <div class="bg-card">
+    <p><b>① 道理上的没根</b>：道理讲得极顺，但生活里一点没变。<b>读了十本讲专注的书，还是每天刷三小时手机</b>——这就是"口耳之学"。阳明说的解法不是再读一本，是<b>在那一瞬间省察克治</b>（022 课的"如猫捕鼠"）。</p>
+    <p><b>② 愿心上的没根</b>：立志要"帮助很多人""做有意义的事"，但不愿意从身边最近的那一个人开始。<b>阳明说这不叫大爱，这叫无根</b>——因为爱也是要有发端处的。</p>
+    <p style="color:var(--ink-soft)">（这条对做内容、做产品的人也成立：<b>先服务好眼前这一个真实的人</b>，比空想"我要影响一百万人"更有根。）</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>如今一说话之间，虽只讲天理，不知心中倏忽之间，已有多少私欲。</b><br><br>
+    <b>能抽芽，必是下面有个根在。有根方生，无根便死。无根何从抽芽？</b><br><br>
+    <b>父子兄弟之爱，便是人心生意发端处，如木之抽芽。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>这一课最有用的一条（也是对自己的检验）：</b>挑一个你"很懂"的道理（早睡、少刷手机、别发脾气），问一句：<b>我做到了几成？</b><br>
+    如果不到三成——那不是你"懂"了，是"听过"。<b>阳明说，听过不算学；做到一分，才算学了一分。</b><br>
+    <b>另外，第 30 课了。</b>三十课读下来，最有价值的可能不是哪一句金句，而是你每天真的坐下来读了这十几分钟——<b>这件事本身，就是"有根"。</b>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 069 · 072 · 口耳之学</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
