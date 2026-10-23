@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 031 课 · 心即理 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 031 课</div>
+  <h1>心即理</h1>
+  <div class="sub">《传习录》陆澄录 · 第七十三条（收官）</div>
+  <div>
+    <span class="tag">当理与无私心</span>
+    <span class="tag">心即理</span>
+    <span class="tag">析言之恐未善</span>
+    <span class="tag">私己的心</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文一 · "当理"和"无私心"怎么分</div>
+  <div class="original">
+    <p class="q">问："延平云：'<b>当理而无私心</b>。''当理'与'无私心'如何分别？"</p>
+    <p>先生曰："<b>心即理也，无私心即是当理，未当理便是私心。若析心与理言之，恐亦未善。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（一）</div>
+  <div class="translation">
+    <p><b>陆澄问：</b>"延平先生（李侗）说'合乎天理而没有私心'。<b>'合乎天理'和'没有私心'这两件事，怎么分？</b>"</p>
+    <p><span class="speaker">阳明说：</span>"<b>心就是天理。</b>没有私心，就是合乎天理；不合乎天理，就是私心。<b>如果非要把心和天理拆成两样东西来讲，恐怕就不妥当了。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">原文二 · 佛家算不算无私心</div>
+  <div class="original">
+    <p class="q">又问："释氏于世间一切情欲之私都不染着，似无私心。但<b>外弃人伦</b>，却似未当理。"</p>
+    <p>曰："<b>亦只是一统事，都只是成就他一个私己的心。</b>"</p>
+    <p style="color:var(--ink-soft);font-size:0.9rem;margin-top:10px">右门人陆澄录。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话（二）</div>
+  <div class="translation">
+    <p><b>陆澄又问：</b>"佛家对世间一切情欲私念都不沾染，<b>看起来是没有私心</b>。可他们把外在的人伦关系都抛弃了，<b>又好像不合天理</b>。"</p>
+    <p><span class="speaker">阳明说：</span>"<b>这其实是一件事</b>——<b>都只是成就他自己那一个私己的心。</b>"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">一句话抓住它</div>
+  <div class="hl">不是先有一把外部的尺，再去量心；<br><b>心一歪，尺就歪了。</b></div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 三个人名，一场旧账</div>
+  <div class="bg-card">
+    <p><b>① 延平</b>——李侗，号延平，朱熹的老师（程门"道南学派"一脉）。他讲"当理而无私心"，是把修养分成两件事来校：<b>一是所做的事合不合天理，二是心里有没有私意</b>。这个说法在朱子学里很自然——因为朱子学里，理在心之外，是可以被"认取"和"对照"的。</p>
+    <p><b>② 陆澄</b>——就是本卷的记录者。《传习录》里他问得最细，常常是替我们问出那个"逻辑上还差一块"的地方。这一次他问的是：<b>如果两件事要分开校，那它们岂不是可能打架？</b>（比如一件事合于理，我却做得不甘心；或我心里很愿意，事却不合于理。）</p>
+    <p><b>③ 争的其实不是定义</b>——陆澄问的是"怎么分辨"，阳明答的是"<b>不必分辨，你分错了层次</b>"。这个转身，是本条全部的力量所在。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 阳明的两步</div>
+  <div class="steps">
+    <div class="st"><b>第一步 · 他不回答"怎么分"，他把要分的那两样合成一样</b>——"心即理也"。这一句不是口号，是取消题目的前提：<b>如果心与理是一件事，那么"当理"和"无私心"根本不是两道关，是一件事的两面。</b>你只要问一句"我这念头干净不干净"，两个问题就一起答了。</div>
+    <div class="st"><b>第二步 · 要害在"析"这个字</b>——阳明说"若<b>析</b>心与理言之，恐亦未善"。一"分析"，就得先把心放上手术台、把理拿到心外面当尺子。<b>可那把尺子谁来看？还是心。</b>所以一切"我要检查我自己的心"的努力，如果预设了心和理两截，就会永远在原地打转：<b>你既当被告，又当法官，还当那把尺。</b></div>
+    <div class="st"><b>第三步 · 他不否认佛家的功夫深</b>——注意阳明怎么答陆澄："释氏于一切情欲都不染着，似无私心。"这句承认是真的。<b>但他换了判据：不看你的心干不干净，看这个"干净"最后是为了谁。</b>"都只是成就他一个私己的心"——断欲很可能是真功夫，问题在于<b>断欲这件事本身成了"我"的成就</b>。</div>
+    <div class="st"><b>第四步 · 判据落在人伦上</b>——"外弃人伦"在阳明这里不是道德指责，是<b>结构问题</b>：理是在父子、君臣、夫妇、朋友之间显出来的。你退出这些关系，就没有"当理"这回事可谈了，只剩一个"不想被打扰的我"。<b>所以在他看来，"无情无欲"和"自私"可以是同一件事的两张脸。</b></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个干净人</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p><b>甲</b>搬到山顶独居二十年。不与人来往，不吃荤，心里没有一丝挂碍。山下人都说他"修为深、一点私心都没有"。他的屋子一尘不染。</p>
+    <p><b>乙</b>住在村口，老母亲卧病在床八年。他每天翻身、擦洗、端屎端尿。脾气有时还上来，跟邻居拌过嘴，也后悔过。他心里常觉得自己"不够干净"。他的屋子有味道。</p>
+    <p>有人问阳明：这两个人，谁无私心？</p>
+    <p>阳明反问：<b>甲这二十年，图的是什么？乙这八年，图的是什么？</b></p>
+    <p>甲图的是<b>心里那点清净</b>。乙图的是<b>娘少疼一点</b>。</p>
+    <p>"清净"是甲自己的成就；"娘少疼一点"才是理。阳明说：<b>"都只是成就他一个私己的心。"</b>——<b>把"没有私心"本身当成一件要完成的事，那件事就成了最大的私心。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 三种"看起来很干净"</div>
+  <div class="bg-card">
+    <p><b>① 把"无私心"误解成"没有情绪、不偏爱"</b>——于是努力做到对谁都不动心、对什么都没所谓。<b>这不是无私，这是把心修成一块玻璃。</b>第 023 课阳明讲得清楚："父之爱子，自是至情；过即是私意。"<b>当理不是无情，是情恰好。</b></p>
+    <p><b>② 现代版的"外弃人伦"</b>——"我需要空间""不想被消耗""先把自己修好再谈别人"。这些话单听都对，但如果最后的结果是<b>退出了所有要他负责的关系</b>，那就和阳明说的那个"私己的心"是同一件事：断掉麻烦，成就的是一个不被打扰的我。</p>
+    <p><b>③ 最常见的一种：把"我心里没私心"当免检通行证</b>——"我这是为他好""我这是讲原则""我没有私心，所以我说得对"。<b>可心一旦是唯一的尺，"我没有私心"这句话本身就没法被检验了。</b>所以阳明把尺子放回关系里：<b>看结果——对方的处境因为你变好了，还是只是你的道理讲赢了。</b></p>
+    <p style="color:var(--ink-soft)">（这一条对管人的岗位特别实在：住院总派活、带教、跟家属谈话——<b>"我是按规定来的"和"我是为他好"，这两句话最容易盖住"我怕麻烦"。</b>）</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>心即理也，无私心即是当理，未当理便是私心。</b><br><br>
+    <b>若析心与理言之，恐亦未善。</b><br><br>
+    <b>亦只是一统事，都只是成就他一个私己的心。</b>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>一个自查：</b>回想最近一次你说"我这是为你好"或"我这是按规矩来"，问三句——<b>我有没有怕麻烦？我有没有怕被否定？如果没人知道，我还会这么做吗？</b><br>
+    三句里有一句答"是"，那里就有个"私己的心"。<b>不必自责，看见就够了</b>——阳明的功夫从来不是先把自己判成坏人，而是先看清楚。<br><br>
+    <b>这一则是陆澄录的最后一则。</b>陆澄录 73 则（我们挑讲了 20 则，共 31 课）到这里收官。<b>有意思的是，卷首第一条讲"主一"，卷末最后一条回到"心即理"——一圈又合上了。</b>阳明没有在前面给你三十条新知识，他只是把同一件事，从三十一个角度又说了一遍。<br>
+    <b>下一站是薛侃录（35 则）。</b>不必赶：这类书零碎看、挑最戳的一节读进去，比刷完更有用。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 陆澄录 073 · 心即理</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
