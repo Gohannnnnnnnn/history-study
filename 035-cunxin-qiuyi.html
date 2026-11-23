@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 035 课 · 存心求异即不是 | 为己之学</title>
+<style>
+  :root {
+    --bg: #f5f7fb; --ink: #24324a; --ink-soft: #65748b; --primary: #2563eb;
+    --deep: #172554; --line: #dbe4f0; --panel: #eef3fd;
+    --gold: #d97706; --green: #159568; --red: #d64c4c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.9;
+    max-width:720px; margin:0 auto; padding:20px 18px 60px;
+  }
+  .progress { position:fixed; top:0; left:0; height:3px; background:var(--primary); width:0; z-index:999; }
+  .back-btn { position:fixed; left:12px; z-index:100; background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:0.78rem; color:var(--primary); text-decoration:none; box-shadow:0 1px 4px rgba(34,48,74,.12); }
+  .back-top-left { top:12px; }
+  .back-bottom-left { bottom:12px; }
+  header { text-align:center; padding:30px 0 14px; }
+  .logo { font-size:0.8rem; letter-spacing:6px; color:var(--primary); margin-bottom:6px; }
+  .course-no { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.75rem; padding:2px 12px; border-radius:12px; margin-bottom:8px; }
+  h1 { font-size:1.5rem; color:var(--deep); }
+  .sub { color:var(--ink-soft); font-size:0.88rem; margin-top:4px; }
+  .tag { display:inline-block; background:var(--panel); color:var(--primary); font-size:0.72rem; padding:2px 10px; border-radius:12px; margin:6px 3px 0; }
+  section { margin:18px 0; }
+  .sec-title { font-size:0.85rem; font-weight:700; color:var(--primary); margin-bottom:8px; padding-left:10px; border-left:3px solid var(--primary); }
+  .original { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .original .q { margin:0 0 10px; color:var(--deep); font-weight:700; }
+  .original p { margin:6px 0; }
+  .translation { background:var(--panel); border-radius:12px; padding:16px 18px; }
+  .translation p { margin:6px 0; }
+  .speaker { color:var(--primary); font-weight:700; }
+  .bg-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .bg-card p { margin:6px 0; }
+  .fable { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .fable .mark { color:var(--gold); font-weight:700; font-size:0.75rem; letter-spacing:2px; }
+  .fable p { margin:7px 0; }
+  .recite { background:var(--panel); border-radius:12px; padding:14px 16px; margin:10px 0; font-size:0.95rem; }
+  .recite b { color:var(--deep); }
+  .tip { background:#f0faf5; border:1px solid #cfe8df; border-radius:10px; padding:12px 14px; margin:10px 0; font-size:0.92rem; }
+  .tip b { color:var(--green); }
+  .steps { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .steps .st { padding:7px 0; border-bottom:1px dashed var(--line); font-size:0.93rem; }
+  .steps .st:last-child { border-bottom:none; }
+  .steps .st b { color:var(--primary); }
+  .original b, .translation b { color:var(--deep); }
+  .hl { background:#fff9e8; border:1px solid #f0e0b8; border-radius:10px; padding:13px 16px; margin:10px 0; text-align:center; font-size:1.02rem; color:var(--deep); font-weight:700; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="progress" id="pgbar"></div>
+<a class="back-btn back-top-left" href="index.html">← 目录</a>
+<a class="back-btn back-bottom-left" href="index.html">← 目录</a>
+
+<header>
+  <div class="logo">为 己 之 学</div>
+  <div class="course-no">第 035 课</div>
+  <h1>存心求异即不是</h1>
+  <div class="sub">《传习录》薛侃录 · 第四条</div>
+  <div>
+    <span class="tag">晦庵</span>
+    <span class="tag">有心求异</span>
+    <span class="tag">毫厘千里</span>
+    <span class="tag">吾心未尝异</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-title">原文</div>
+  <div class="original">
+    <p class="q">朋友观书，多有摘议晦庵者。</p>
+    <p>先生曰："是有心求异即不是。吾说与晦庵时有不同者，为入门下手处有毫厘千里之分，不得不辩。然吾之心与晦庵之心未尝异也。若其余文义解得明当处，如何动得一字？"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">白话翻译</div>
+  <div class="translation">
+    <p>学生们读书，常挑出朱熹（晦庵）的话来非议。</p>
+    <p><span class="speaker">阳明说：</span>"<b>存心要找出不同，这本身就错了。</b>我的说法与朱子时常不同，是因为在入门下手的地方有毫厘之差、千里之谬，不得不分辨清楚。但<b>我的心与朱子的心，未尝有什么不同</b>。至于其余那些文义上他解得明白妥当的地方，我怎么敢动一个字？"</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">背景 · 他当时处在什么位置</div>
+  <div class="bg-card">
+    <p><b>晦庵就是朱熹。</b>明代科举以朱注为官方标准，读书人从小读朱子。阳明提出"心即理""知行合一"，等于动了朱子学的根基，因此长年被指为"伪学"、被攻讦。</p>
+    <p>他的学生于是反过来——读书时专挑朱子的毛病，拿老师的说法去压朱子。<b>阳明立刻喝止。</b></p>
+    <p>底本此条的题解点出他的处境：他一方面说"濂溪、明道之后，还是象山，只是粗些"，似乎偏陆九渊；另一方面又编《朱子晚年定论》，证明朱子晚年所悟与心学相合。<b>这不是骑墙，是他真的认为两边的心是一样的，只是入手处不同。</b></p>
+    <p>这一条要连着那个背景读，才看得懂他为什么先骂自己的学生。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">拆解 · 三种态度，他只认第三种</div>
+  <div class="bg-card">
+    <p>对"跟我不同的人"，人大致有三种态度。阳明在这一条里把三种都摆出来了：</p>
+    <table>
+      <tr><th>态度</th><th>表现</th><th>阳明的判语</th></tr>
+      <tr><td>有心求异</td><td>专挑对方的错，越挑越觉得自己高明</td><td>"即不是"——起心动念就错了</td></tr>
+      <tr><td>含糊求同</td><td>都是圣人，都对，不必争</td><td>他也没选这条路：<b>"不得不辩"</b></td></tr>
+      <tr><td>辨下手处</td><td>只争入门那一步，其余承认</td><td>这是他走的路</td></tr>
+    </table>
+    <p><b>"毫厘千里"</b>这四个字是重点：入门时差一毫，走到底差千里。所以该争的地方必须争，含糊过去是害人。但要注意他争的<b>范围</b>——只有"入门下手处"。</p>
+    <p>后面两句更硬：</p>
+    <p><b>"吾之心与晦庵之心未尝异也。"</b>——我跟他不是敌人，我们想要的是同一个东西。争的是路线，不是立场，更不是人。</p>
+    <p><b>"若其余文义解得明当处，如何动得一字？"</b>——凡是他讲对了的地方，一个字也不改。这句话把"反对一个人"和"反对他的每一句话"彻底切开了。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">寓言 · 两个木匠装一张桌子</div>
+  <div class="fable">
+    <div class="mark">寓言</div>
+    <p>两个木匠装同一张桌子。一个先装四条腿再翻过来铺面板，一个先铺面板再翻过去上腿。</p>
+    <p>一个说：不先把腿立住，面板放上去必然歪。另一个说：不先铺面板找平，腿装上去四条不齐。</p>
+    <p>两人吵得很凶，旁边的人以为他们做的不是同一张桌子。</p>
+    <p>其实他们要的东西一模一样：<b>一张不晃的桌子。</b>争的只是先拧哪颗螺丝。<b>看不出这一点的人，会把"他跟我顺序不同"当成"他要的东西跟我不同"。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">落到今天 · 分不清"下手处"和"人"</div>
+  <div class="bg-card">
+    <p>这一条在今天最常见的病例，是<b>把分歧升级成人</b>：组会上不同意某篇文献的方法，说着说着变成"这帮人就是水"；网上讨论工具，从"这个方案在这个场景不合适"滑到"用它的都是傻子"。</p>
+    <p>更隐蔽的一种是<b>站队式的反对</b>：因为不喜欢某个人、某个学派、某个圈子，就把他说的每句话都当错的。这正是阳明骂的"有心求异"——还没读，立场先定了。</p>
+    <p><b>一个自查：</b>你跟某个人意见不同时，能不能说出<b>他哪几句是对的</b>？说不出来，你争的就不是下手处，是人。</p>
+    <p>再补一句实用的：<b>先说出对方哪三点你同意，再讲你不同意的那一点。</b>能做到，说明你争的是"毫厘"；做不到，说明你在争输赢。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">建议背诵</div>
+  <div class="recite">
+    <b>"吾说与晦庵时有不同者，为入门下手处有毫厘千里之分，不得不辩。然吾之心与晦庵之心未尝异也。"</b><br><br>
+    一句话：<b>争下手处，不争人。</b>该辩的毫厘要辩到底，他讲对的地方一个字都不动。
+  </div>
+</section>
+
+<section>
+  <div class="sec-title">体会提示</div>
+  <div class="tip">
+    <b>薛侃录前四课连起来看：</b>第三十二条讲力道（别死守），三十三条讲动力（志切则讲求在其中），三十四条讲证据（别看状态看改动），这一条讲<b>对手</b>——怎么对待跟你不一样的人。<br><br>
+    <b>对你的用处是现成的：</b>你以后要写文章、回审稿意见、跟同行讨论病例，冲突几乎都发生在"下手处不同"上。审稿人说你方法有问题，多半不是要害你；你要做的是分清他哪几句在点上、哪几句不成立，然后只辩那几句。<br>
+    <b>下一课：</b>薛侃录第五条——"精金"那一则（希渊问圣人可学而至），是这一卷里最有名的比喻，讲成色与分量之别。
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--ink-soft);font-size:0.8rem;margin-top:30px">为己之学 · 薛侃录 004 · 存心求异即不是</footer>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('pgbar').style.width=p+'%';});
+</script>
+</body>
+</html>
